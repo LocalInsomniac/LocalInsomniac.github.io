@@ -1,8 +1,109 @@
 <html>
 	<head>
-		<title>Can't Sleep</title>
+		<title>
+			Can't Sleep
+		</title>
+		<style>
+			img.logo {
+				width: 20%;
+				max-height: 20%;
+			}
+			
+			img.character {
+				width: 36%;
+				max-height: 36%;
+			}
+		</style>
 	</head>
-	<body>
-		<p>Lorem ipsum etc</p>
+	<body style = "background-color: #FAFAFA">
+		<div id = "logo" style = "
+			position: fixed;
+			text-align: center;
+			top: 80px;
+			width: 100%;
+		">
+			<img class = "logo" src = "assets/logo.png" title = "Schwungus Software, here I come!" onclick = "
+				this.src = 'assets/schwungus_logo.png'
+				this.title = 'Schwungus Software, here we are!'
+				document.getElementById('logo').style.top = '50px'
+			"></img>
+			<p>
+		</div>
+		<div style = "
+			position: absolute;
+			height: 480px;
+			border-left: 1px solid #A0A0A0;
+			right: 50%;
+			top: 240px;
+		"></div>
+		<div style = "
+			position: absolute;
+			text-align: center;
+			font-family: corbel;
+			font-size: 18;
+			left: 320px;
+			top: 285px;
+		">
+			<img class = "character" src = "assets/mario.png"></img>
+			<p style = "
+				font-size: 24;
+				letter-spacing: 3px;
+				margin-bottom: -10px;
+			">
+				PROJECT NIGHTMARE
+			</p>
+			<p style = "font-size: 16">
+				Fan Game&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Work In Progress
+			</p>
+			<p style = "font-size: 16">
+				<a style = "text-decoration: none" href = "https://twitter.com/PNFangame">
+					@PNFangame
+				</a>
+			</p>
+		</div>
+		<div style = "
+			position: absolute;
+			text-align: center;
+			font-family: corbel;
+			font-size: 18;
+			right: 320px;
+			top: 285px;
+		">
+			<img class = "character" src = "assets/hunk.png"></img>
+			<p style = "
+				font-size: 24;
+				letter-spacing: 3px;
+				margin-bottom: -10px;
+			">
+				HUNK QUEST
+			</p>
+			<p style = "font-size: 16">
+				To Be Announced
+			</p>
+		</div>
+		<div style = "
+			position: fixed;
+			text-align: center;
+			bottom: 96px;
+			width: 100%;
+			font-family: corbel;
+			font-size: 18;
+		">
+			<a style = "text-decoration: none" href = "https://twitter.com/_LocalInsomniac">
+				Twitter
+			</a>
+			&nbsp;&nbsp;•&nbsp;&nbsp;
+			<a style = "text-decoration: none" href = "https://localinsomniac.newgrounds.com/">
+				Newgrounds
+			</a>
+			&nbsp;&nbsp;•&nbsp;&nbsp;
+			<a style = "text-decoration: none" href = "https://github.com/LocalInsomniac">
+				GitHub
+			</a>
+			&nbsp;&nbsp;•&nbsp;&nbsp;
+			<a style = "text-decoration: none" href = "mailto:localamnesiac@gmail.com">
+				Email
+			</a>
+		</div>
 	</body>
 </html>
