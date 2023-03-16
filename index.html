@@ -1,14 +1,18 @@
 <html>
 	<head>
-		<title>
-			Can't Sleep
-		</title>
-		
+		<title>Can't Sleep</title>
 		<link rel = "icon" type = "image/x-icon" href = "assets/favicon.ico">
 		
 		<style>
 			img.logo {
 				width: 30%;
+			}
+			
+			img.mascot {
+				position: fixed;
+				width: 12%;
+				left: 16px;
+				bottom: 16px;
 			}
 			
 			hr.custom {
@@ -42,6 +46,27 @@
 				height: auto;
 			}
 			
+			.project-title {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				font-size: 13;
+				background-color: rgba(0.137, 0.149, 0.161, 0.6);
+				padding-top: 2px;
+				padding-left: 8px;
+				padding-bottom: 2px;
+				padding-right: 16px;
+				border-bottom-right-radius: 32px;
+				transition: .25s ease;
+				font-family: 'forced_square';
+			}
+			
+			@font-face {
+				font-family: 'forced_square';
+				src: url('assets/forced_square-webfont.woff2') format('woff2'),
+					 url('assets/forced_square-webfont.woff') format('woff');
+			}
+			
 			.project-overlay {
 				position: absolute;
 				top: 0;
@@ -55,7 +80,25 @@
 			}
 			
 			.project-text {
-				max-width: 75%
+				max-width: 75%;
+			}
+			
+			.project-marquee {
+				white-space: nowrap;
+				display: inline-block;
+				padding-left: 125%;
+				animation: marquee 9.6s linear infinite;
+				font-weight: bold;
+				overflow: hidden;
+			}
+			
+			@keyframes marquee {
+				0%   { transform: translate(0, 0); }
+				100% { transform: translate(-125%, 0); }
+			}
+			
+			.project:hover .project-title {
+				transform: translate(0, -32px);
 			}
 			
 			.project:hover .project-image {
@@ -127,10 +170,11 @@
 			
 			<div id = "projects">
 				<div id = "original">
-					<h1>Originals</h1>
+					<big><h2>Projects</h2></big>
 					
 					<div class = "project">
 						<img class = "project-image" src = "assets/icon_Hunk-Quest.png" alt = "Hunk Quest">
+						<div class = "project-title">HUNK QUEST</div>
 						
 						<div class = "project-overlay">
 							<center>
@@ -151,7 +195,7 @@
 									starring Hunk.
 									<br>
 									<br>
-									<b>Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</b>
+									<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
 								</div>
 							</center>
 						</div>
@@ -159,6 +203,7 @@
 					
 					<div class = "project">
 						<img class = "project-image" src = "assets/icon_dnb.png" alt = "dnb">
+						<div class = "project-title">DNB</div>
 						
 						<div class = "project-overlay">
 							<center>
@@ -179,7 +224,7 @@
 									new element.
 									<br>
 									<br>
-									<b>Art</b>
+									<div class = "project-marquee">Art</div>
 								</div>
 							</center>
 						</div>
@@ -187,13 +232,15 @@
 				</div>
 				
 				<br>
+				<br>
+				<br>
 				
 				<div id = "fan-made">
-					<h1>Fan-Made</h1>
-					<br>
+					<big><h2>Fan Works</h2></big>
 					
 					<div class = "project">
 						<img class = "project-image" src = "assets/icon_NTMAi.png" alt = "Nobody Told Me About id">
+						<div class = "project-title">NOBODY TOLD ME ABOUT ID</div>
 						
 						<div class = "project-overlay">
 							<center>
@@ -209,7 +256,7 @@
 									Warrior.
 									<br>
 									<br>
-									<b>Programming&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</b>
+									<div class = "project-marquee">Programming&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
 								</div>
 							</center>
 						</div>
@@ -217,6 +264,7 @@
 					
 					<div class = "project">
 						<img class = "project-image" src = "assets/icon_Project-Nightmare.png" alt = "Project Nightmare">
+						<div class = "project-title">PROJECT NIGHTMARE</div>
 						
 						<div class = "project-overlay">
 							<center>
@@ -237,7 +285,7 @@
 									Nintendo Nightmare.
 									<br>
 									<br>
-									<b>Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</b>
+									<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
 								</div>
 							</center>
 						</div>
@@ -245,6 +293,7 @@
 					
 					<div class = "project">
 						<img class = "project-image" src = "assets/icon_CHALLENJOURED-TOUR.png" alt = "CHALLENJOURED: TOUR">
+						<div class = "project-title">CHALLENJOURED: TOUR</div>
 						
 						<div class = "project-overlay">
 							<center>
@@ -259,7 +308,7 @@
 									source ports.
 									<br>
 									<br>
-									<b>Design&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</b>
+									<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
 								</div>
 							</center>
 						</div>
@@ -274,18 +323,18 @@
 			<hr class = "custom">
 			<br>
 			<br>
-			<sub>Last updated 27 February, 2023</sub>
+			<sub>Last updated March 16, 2023</sub>
 			<br>
 			
 			<div id = "random-mascot">
 				<script type="text/javascript">
-					/*var mascots = [
+					var mascots = [
 						// image, name, franchise
 						["Hunk", "Hunk", "Hunk Quest"],
-						["Grunk", "Grunk", "Hunk Quest"],
-						["Spangler", "Spangler", "Hunk Quest"],
-						["Dud", "Dud", "Hunk Quest"],
-						["Cop", "Cop", "Hunk Quest"],
+						//["Grunk", "Grunk", "Hunk Quest"],
+						//["Spangler", "Spangler", "Hunk Quest"],
+						//["Dud", "Dud", "Hunk Quest"],
+						//["Cop", "Cop", "Hunk Quest"],
 						["Lank", "Lank", "Hunk Quest"],
 						["Junktroop", "Junktroop", "Hunk Quest"],
 						["Gilbert", "Gilbert", "dnb"],
@@ -293,7 +342,8 @@
 					
 					var mascot = mascots[Math.floor(Math.random() * mascots.length)]
 					
-					document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")*/
+					document.write("<img class = \"mascot\" src = \"assets/mascot_" + mascot[0] + ".png\">")
+					document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")
 				</script>
 			</div>
 			
