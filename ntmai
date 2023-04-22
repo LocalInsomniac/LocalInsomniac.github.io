@@ -1,0 +1,196 @@
+<html>
+	<head>
+		<title>Nobody Told Me About id</title>
+		<link rel = "icon" type = "image/x-icon" href = "assets/ntmai/favicon.ico"></link>
+		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
+		
+		<style>
+			img.logo {
+				width: 40%;
+			}
+			
+			@font-face {
+				font-family: 'Doom2016Text';
+				src: url('assets/ntmai/Doom2016Text.woff2') format('woff2'),
+					 url('assets/ntmai/Doom2016Text.woff') format('woff');
+			}
+			
+			@font-face {
+				font-family: 'EternalUiRegular';
+				src: url('assets/ntmai/EternalUiRegular.woff2') format('woff2'),
+					 url('assets/ntmai/EternalUiRegular.woff') format('woff');
+			}
+			
+			a.custom {
+				color: #CC1700;
+			}
+			
+			.title {
+				font-size: 64px;
+				font-family: Doom2016Text;
+				letter-spacing: 2px;
+			}
+			
+			.inline {
+				margin: auto;
+				inline-size: 75%;
+				font-size: 24px;
+			}
+			
+			.header {
+				background-color: #232629;
+				font-size: 56px;
+				font-family: Doom2016Text;
+				letter-spacing: 2px;
+			}
+			
+			.cover {
+				background-color: #232629;
+			}
+			
+			.button {
+				padding: 10px;
+				display: inline-block;
+				transition: all .2s ease;
+				width: auto;
+				margin: 0.8vw;
+				font-size: 25px;
+				background-color: #FFFFFF;
+				color: #232629;
+				text-align: center;
+				text-decoration: none;
+			}
+			
+			.button:hover {
+				background-color: #CC1700;
+			}
+			
+			.gallery  {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			.gallery img {
+				width: 320px;
+				padding: 8px;
+			}
+		</style>
+	</head>
+	
+	<body style = "background-color: #232629">
+		<div id = "main" style = "text-align: center; top: 64px; width: 100%; font-family: EternalUiRegular; color: #FFFFFF;">
+			<div id = "body" style = "max-width: 75%; margin: auto; background-color: #9F1700; margin-top: -10px; margin-bottom: -10px">
+				<br>
+				<br>
+				<a href = "/"><img class = "logo" src = "assets/logo.png"></img></a>
+				<br>
+				<br>
+				<br>
+				
+				<div id = "header" class = "header" style = "font-size: 56px; font-family: Doom2016Text">
+					NOBODY TOLD ME ABOUT ID
+					<img src = "assets/ntmai/ntmai.png" style = "width: 100%; vertical-align: middle"></img>
+					A BUILD ENGINE-STYLE GAMEPLAY MOD FOR GZDOOM
+				</div>
+				
+				<br>
+				
+				<div id = "buttons">
+					<a href = "https://github.com/LocalInsomniac/NTMAi" class = "button"><i class = "fa fa-github"></i> GitHub</a>
+					<a href = "https://github.com/LocalInsomniac/NTMAi/releases/latest" class = "button"><i class = "fa fa-download"></i> Download<b>*</b></a>
+					<a href = "https://discord.gg/RxWqRb2uQB" class = "button"><i class = "fa-brands fa-discord"></i> Discord</a>
+					<br>
+					<sub><b>*</b>Requires GZDoom 4.10 or newer and a legal copy of Classic DOOM.</sub>
+				</div>
+				
+				<br>
+				
+				<div id = "summary" class = "cover">
+					<br>
+					<br>
+					<br>
+					<a class = "title">DOOM FROM AN ALTERNATE UNIVERSE</a>
+					<br>
+					<br>
+					
+					<p class = "inline">
+						Nobody Told Me About id is a love letter from DOOM fans
+						to the iconic trinity of Build Engine games; Duke Nukem
+						3D, Blood and Shadow Warrior. Whether it be ludicrous
+						gore or explosions, NTMAi tries its best to faithfully
+						replicate all things Build on DOOM while also enhancing
+						the base gameplay. Your arsenal may be tough, but some
+						enemies will have a trick or two up their sleeves...
+						<br>
+						<br>
+						NTMAi originally started off as a small project during
+						summer 2019. It went on to <a href = "https://www.doomworld.com/cacowards/2020/gameplay/" class = "custom">win a Cacoward in 2020</a>
+						and eventually got rebooted to a much better state in
+						early 2023.
+						<br>
+						<br>
+						<br>
+						
+						<div class = "gallery">
+							<a href = "assets/ntmai/ntmai_base1.png"><img src = "assets/ntmai/ntmai_base1.png"></img></a>
+							<a href = "assets/ntmai/ntmai_base2.png"><img src = "assets/ntmai/ntmai_base2.png"></img></a>
+							<a href = "assets/ntmai/ntmai_base3.png"><img src = "assets/ntmai/ntmai_base3.png"></img></a>
+							<a href = "assets/ntmai/ntmai_base4.png"><img src = "assets/ntmai/ntmai_base4.png"></img></a>
+						</div>
+						
+						<br>
+						<br>
+						<br>
+					</p>
+					
+					<a class = "title">HURT ME PLENTY MORE</a>
+					<br>
+					<br>
+					
+					<p class = "inline">
+						Want some extra challenge? NTMAi also comes with built-in
+						<b>special support</b> for a select few map packs such
+						as <a href = "https://www.doomworld.com/forum/topic/125461-ad-mortem-a-mbf21-halloween-themed-megawad-new-update-phase-2-is-out/" class = "custom">AD MORTEM</a>,
+						<a href = "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mayhem19" class = "custom">MAYhem 2019</a>
+						and <a href = "https://www.doomworld.com/idgames/?id=13600" class = "custom">Scythe 2</a>.
+						Playing on these will automatically enable badder
+						monsters and maybe even some new weapons to play with!
+						<br>
+						<br>
+						<br>
+						
+						<div class = "gallery">
+							<a href = "assets/ntmai/ntmai_extra1.png"><img src = "assets/ntmai/ntmai_extra1.png"></img></a>
+							<a href = "assets/ntmai/ntmai_extra2.png"><img src = "assets/ntmai/ntmai_extra2.png"></img></a>
+							<a href = "assets/ntmai/ntmai_extra3.png"><img src = "assets/ntmai/ntmai_extra3.png"></img></a>
+						</div>
+						
+						<br>
+						<br>
+						<br>
+					</p>
+					
+					<br>
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				
+				<sub>
+					<b>Last updated April 22, 2023</b>
+					<br>
+					Nobody Told Me About id is a non-profit fan project. All games referenced are copyrighted by their respective owners.
+					<br>
+					Original artwork created by 3D Realms and edited by Kinsie and IDDQD_1337.
+				</sub>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+	</body>
+</html>

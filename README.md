@@ -2,4 +2,10 @@
 
 Can't Sleep's homepage.
 
-**Forced Square** is created by Friendly Fonts.
+## Credits
+
+**DOOM Fonts** by HK Fonts
+
+**Forced Square** by Friendly Fonts
+
+Icons from **Font Awesome**
