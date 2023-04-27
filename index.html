@@ -6,7 +6,7 @@
 		
 		<style>
 			img.logo {
-				width: 30%;
+				width: 36vw;
 			}
 			
 			img.mascot {
@@ -16,17 +16,15 @@
 				bottom: 1vh;
 			}
 			
-			hr.custom {
-				width: 50%;
-				border: 0;
-				height: 1px;
-				opacity: 0.5;
-				background: #FFFFFF;
-			}
-			
-			a.custom {
+			#links a {
+				display: inline-block;
 				text-decoration: none;
 				color: #598EB2;
+				transition: all .25s ease;
+			}
+			
+			#links a:hover {
+				-webkit-transform: scale(1.5);
 			}
 			
 			.project {
@@ -110,69 +108,64 @@
 			.project:hover .project-overlay {
 				opacity: 1;
 			}
+			
+			.section {
+				font-size: 2vw;
+			}
 		</style>
 	</head>
 	
 	<body style = "background-color: #232629">
-		<div id = "main" style = "text-align: center; top: 64px; width: 100%; font-family: calibri; color: #FFFFFF;">
-			<br>
-			<br>
-			<br>
-			<br>
-			<img class = "logo" src = "assets/logo.png"></img>
-			<br>
-			<br>
-			
-			<div id = "links" style = "font-size: 18;">
-				<a class = "custom" href = "https://twitter.com/_LocalInsomniac">
-					<span title = "@_LocalInsomniac">
-						Twitter
-					</span>
-				</a>
+		<div id = "main" style = "text-align: center; font-family: calibri; color: #FFFFFF; margin-top: 10vh; margin-bottom: 8vh">
+			<div id = "intro" style = "height: 50%">
+				<img class = "logo" src = "assets/logo.png"></img>
 				
-				&nbsp;&nbsp;•&nbsp;&nbsp;
+				<div id = "links" style = "font-size: 2.8vw; user-select: none">
+					<p>
+						<a href = "https://twitter.com/_LocalInsomniac">
+							<span title = "Twitter (@_LocalInsomniac)">
+								<i class = "fa fa-twitter"></i>
+							</span>
+						</a>
+						
+						&nbsp;&nbsp;&nbsp;
+						
+						<a href = "https://localinsomniac.newgrounds.com/">
+							<span title = "Newgrounds (LocalInsomniac)">
+								<img src = "assets/link_newgrounds.png" style = "height: 1em"></img>
+							</span>
+						</a>
+						
+						&nbsp;&nbsp;&nbsp;
+						
+						<a href = "https://github.com/LocalInsomniac">
+							<span title = "GitHub (LocalInsomniac)">
+								<i class = "fa fa-github"></i>
+							</span>
+						</a>
+						
+						&nbsp;&nbsp;&nbsp;
+						
+						<a href = "mailto:localamnesiac@gmail.com">
+							<span title = "Email (localamnesiac@gmail.com)">
+								<i class = "fa fa-envelope"></i>
+							</span>
+						</a>
+					</p>
+				</div>
 				
-				<a class = "custom" href = "https://localinsomniac.newgrounds.com/">
-					<span title = "LocalInsomniac">
-						Newgrounds
-					</span>
-				</a>
-				
-				&nbsp;&nbsp;•&nbsp;&nbsp;
-				
-				<a class = "custom" href = "https://github.com/LocalInsomniac">
-					<span title = "LocalInsomniac">
-						GitHub
-					</span>
-				</a>
-				
-				&nbsp;&nbsp;•&nbsp;&nbsp;
-				
-				<a class = "custom" href = "mailto:localamnesiac@gmail.com">
-					<span title = "localamnesiac@gmail.com">
-						Email
-					</span>
-				</a>
+				<div id = "bio" style = "text-align: center; width: 100%; font-size: 1.25vw;">
+					<p>
+						Also known as Local Insomniac.
+						<br>
+						I dabble in game development and art.
+					</p>
+				</div>
 			</div>
-			
-			<br>
-			
-			<div id = "bio" style = "text-align: center; width: 100%; font-size: 24;">
-				<p>
-					Also known as Local Insomniac.
-					<br>
-					I dabble in game development and art.
-				</p>
-			</div>
-			
-			<br>
-			<hr class = "custom">
-			<br>
-			<br>
 			
 			<div id = "projects">
 				<div id = "original">
-					<big><h2>Projects</h2></big>
+					<p class = "section"><b>Projects</b></p>
 					
 					<div class = "project">
 						<img class = "project-image" src = "assets/icon_Hunk-Quest.png" alt = "Hunk Quest">
@@ -233,12 +226,8 @@
 					</div>
 				</div>
 				
-				<br>
-				<br>
-				<br>
-				
 				<div id = "fan-made">
-					<big><h2>Fan Works</h2></big>
+					<p class = "section"><b>Fan Works</b></p>
 					
 					<div class = "project">
 						<a href = "ntmai" style = "color: inherit">
@@ -320,40 +309,30 @@
 				</div>
 			</div>
 			
-			<br>
-			<br>
-			<br>
-			<br>
-			<hr class = "custom">
-			<br>
-			<br>
-			<sub>Last updated April 27, 2023</sub>
-			<br>
-			
-			<div id = "random-mascot">
-				<script type="text/javascript">
-					var mascots = [
-						// image, name, franchise
-						["Hunk", "Hunk", "Hunk Quest"],
-						//["Grunk", "Grunk", "Hunk Quest"],
-						//["Spangler", "Spangler", "Hunk Quest"],
-						//["Dud", "Dud", "Hunk Quest"],
-						//["Cop", "Cop", "Hunk Quest"],
-						["Lank", "Lank", "Hunk Quest"],
-						["Junktroop", "Junktroop", "Hunk Quest"],
-						["Gilbert", "Gilbert", "dnb"],
-					]
-					
-					var mascot = mascots[Math.floor(Math.random() * mascots.length)]
-					
-					document.write("<img class = \"mascot\" src = \"assets/mascot_" + mascot[0] + ".png\">")
-					document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")
-				</script>
+			<div id = "about" style = "margin-top: 10vh; font-size: 0.8325vw">
+				<sub>Last updated April 27, 2023</sub>
+				
+				<div id = "random-mascot">
+					<script type="text/javascript">
+						var mascots = [
+							// image, name, franchise
+							["Hunk", "Hunk", "Hunk Quest"],
+							//["Grunk", "Grunk", "Hunk Quest"],
+							//["Spangler", "Spangler", "Hunk Quest"],
+							//["Dud", "Dud", "Hunk Quest"],
+							//["Cop", "Cop", "Hunk Quest"],
+							["Lank", "Lank", "Hunk Quest"],
+							["Junktroop", "Junktroop", "Hunk Quest"],
+							["Gilbert", "Gilbert", "dnb"],
+						]
+						
+						var mascot = mascots[Math.floor(Math.random() * mascots.length)]
+						
+						document.write("<img class = \"mascot\" src = \"assets/mascot_" + mascot[0] + ".png\">")
+						document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")
+					</script>
+				</div>
 			</div>
-			
-			<br>
-			<br>
-			<br>
 		</div>
 	</body>
 </html>
