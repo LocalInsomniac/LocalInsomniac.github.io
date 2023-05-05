@@ -5,8 +5,20 @@
 		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
 		
 		<style>
+			.page {
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			.page-items {
+				min-height: 0;
+			}
+			
 			img.logo {
-				width: 36%;
+				width: 32.5vw;
 			}
 			
 			img.mascot {
@@ -33,7 +45,7 @@
 				transition: all .25s ease;
 				overflow: hidden;
 				border-radius: 0.8vw;
-				width: 20%;
+				width: 20vw;
 				height: auto;
 				margin: 0.5vw;
 			}
@@ -110,228 +122,232 @@
 			}
 			
 			.section {
-				font-size: 250%;
+				font-size: 2.5vw;
+				user-select: none;
 			}
 		</style>
 	</head>
 	
-	<body style = "background-color: #232629">
-		<div id = "main" style = "text-align: center; font-family: calibri; color: #FFFFFF; margin-top: 10vh; margin-bottom: 4%; display: flex; flex-direction: column;">
-			<div id = "intro" style = "height: 48%">
-				<img class = "logo" src = "assets/logo.png"></img>
-				
-				<div id = "links" style = "font-size: 360%; user-select: none">
-					<p>
-						<a href = "https://twitter.com/_LocalInsomniac">
-							<span title = "Twitter (@_LocalInsomniac)">
-								<i class = "fa fa-twitter"></i>
-							</span>
-						</a>
-						
-						&nbsp;&nbsp;&nbsp;
-						
-						<a href = "https://localinsomniac.newgrounds.com/">
-							<span title = "Newgrounds (LocalInsomniac)">
-								<img src = "assets/link_newgrounds.png" style = "height: 1em"></img>
-							</span>
-						</a>
-						
-						&nbsp;&nbsp;&nbsp;
-						
-						<a href = "https://github.com/LocalInsomniac">
-							<span title = "GitHub (LocalInsomniac)">
-								<i class = "fa fa-github"></i>
-							</span>
-						</a>
-						
-						&nbsp;&nbsp;&nbsp;
-						
-						<a href = "mailto:localamnesiac@gmail.com">
-							<span title = "Email (localamnesiac@gmail.com)">
-								<i class = "fa fa-envelope"></i>
-							</span>
-						</a>
-					</p>
-				</div>
-				
-				<div id = "bio" style = "text-align: center; width: 100%; font-size: 150%">
-					<p>
+	<body style = "background-color: #232629; margin: 0; padding: 0">
+		<div id = "main" style = "font-family: calibri; color: #FFFFFF;">
+			<div id = "intro" class = "page">
+				<div class = "page-items">
+					<img class = "logo" src = "assets/logo.png"></img>
+					
+					<div id = "links" style = "font-size: 3.6vw; user-select: none; text-align: center">
+						<p>
+							<a href = "https://twitter.com/_LocalInsomniac">
+								<span title = "Twitter (@_LocalInsomniac)">
+									<i class = "fa fa-twitter"></i>
+								</span>
+							</a>
+							
+							&nbsp;&nbsp;&nbsp;
+							
+							<a href = "https://localinsomniac.newgrounds.com/">
+								<span title = "Newgrounds (LocalInsomniac)">
+									<img src = "assets/link_newgrounds.png" style = "height: 1em"></img>
+								</span>
+							</a>
+							
+							&nbsp;&nbsp;&nbsp;
+							
+							<a href = "https://github.com/LocalInsomniac">
+								<span title = "GitHub (LocalInsomniac)">
+									<i class = "fa fa-github"></i>
+								</span>
+							</a>
+							
+							&nbsp;&nbsp;&nbsp;
+							
+							<a href = "mailto:localamnesiac@gmail.com">
+								<span title = "Email (localamnesiac@gmail.com)">
+									<i class = "fa fa-envelope"></i>
+								</span>
+							</a>
+						</p>
+					</div>
+					
+					<div id = "bio" style = "text-align: center; font-size: 1.5vw">
 						Also known as Local Insomniac.
 						<br>I dabble in game development and art.
-					</p>
+					</div>
 				</div>
 			</div>
 			
-			<div id = "projects">
-				<div id = "original">
-					<p class = "section"><b>Projects</b></p>
-					
-					<div class = "project">
-						<img class = "project-image" src = "assets/icon_Hunk-Quest.png" alt = "Hunk Quest">
-						<div class = "project-title">HUNK QUEST</div>
-						
-						<div class = "project-overlay">
-							<center>
-								<div class = "project-text">
-									<br>
-									
-									<b>
-										<big><big>Hunk Quest</big></big>
-										<br>
-										<sub>Schwungus Software</sub>
-									</b>
-									
-									<br>
-									GameMaker&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-									<br>
-									<br>
-									An action-adventure, beat 'em up platformer
-									starring Hunk.
-									<br>
-									<br>
-									<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
-								</div>
-							</center>
-						</div>
-					</div>
-					
-					<div class = "project">
-						<img class = "project-image" src = "assets/icon_dnb.png" alt = "dnb">
-						<div class = "project-title">DNB</div>
-						
-						<div class = "project-overlay">
-							<center>
-								<div class = "project-text">
-									<br>
-									
-									<b>
-										<big><big>dnb</big></big>
-										<br>
-										<sub>NO5</sub>
-									</b>
-									
-									<br>
-									FNA&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-									<br>
-									<br>
-									A precision platformer where each zone introduces a
-									new element.
-									<br>
-									<br>
-									<div class = "project-marquee">Art</div>
-								</div>
-							</center>
-						</div>
-					</div>
-				</div>
-				
-				<div id = "fan-made">
-					<p class = "section"><br><b>Fan Works</b></p>
-					
-					<div class = "project">
-						<a href = "ntmai" style = "color: inherit">
-							<img class = "project-image" src = "assets/icon_NTMAi.png" alt = "Nobody Told Me About id">
-							<div class = "project-title">NOBODY TOLD ME ABOUT ID <i class="fa fa-external-link"></i></div>
+			<div id = "content" class = "page" style = "background-color: #121315">
+				<div class = "page-items">
+					<div id = "projects">
+						<div id = "original">
+							<p class = "section">&nbsp;<b>Projects</b></p>
 							
-							<div class = "project-overlay">
-								<center>
-									<div class = "project-text">
-										<br>
-										<b><big><big>Nobody Told Me About id</big></big></b>
-										<br>
-										GZDoom&nbsp;&nbsp;•&nbsp;&nbsp;2019
-										<br>
-										<br>
-										A gameplay mod that faithfully turns DOOM into
-										the likes of Duke Nukem 3D, Blood and Shadow
-										Warrior.
-										<br>
-										<br>
-										<div class = "project-marquee">Programming&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
-									</div>
-								</center>
+							<div class = "project">
+								<img class = "project-image" src = "assets/icon_Hunk-Quest.png" alt = "Hunk Quest">
+								<div class = "project-title">HUNK QUEST</div>
+								
+								<div class = "project-overlay">
+									<center>
+										<div class = "project-text">
+											<br>
+											
+											<b>
+												<big><big>Hunk Quest</big></big>
+												<br>
+												<sub>Schwungus Software</sub>
+											</b>
+											
+											<br>
+											GameMaker&nbsp;&nbsp;•&nbsp;&nbsp;WIP
+											<br>
+											<br>
+											An action-adventure, beat 'em up platformer
+											starring Hunk.
+											<br>
+											<br>
+											<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
+										</div>
+									</center>
+								</div>
 							</div>
-						</a>
-					</div>
-					
-					<div class = "project">
-						<img class = "project-image" src = "assets/icon_Project-Nightmare.png" alt = "Project Nightmare">
-						<div class = "project-title">PROJECT NIGHTMARE</div>
-						
-						<div class = "project-overlay">
-							<center>
-								<div class = "project-text">
-									<br>
-									
-									<b>
-										<big><big>Project Nightmare</big></big>
-										<br>
-										<sub>Nightmare Club</sub>
-									</b>
-									
-									<br>
-									GameMaker&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-									<br>
-									<br>
-									A proof-of-concept remake of Adrien Dittrick's
-									Nintendo Nightmare.
-									<br>
-									<br>
-									<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
+							
+							<div class = "project">
+								<img class = "project-image" src = "assets/icon_dnb.png" alt = "dnb">
+								<div class = "project-title">DNB</div>
+								
+								<div class = "project-overlay">
+									<center>
+										<div class = "project-text">
+											<br>
+											
+											<b>
+												<big><big>dnb</big></big>
+												<br>
+												<sub>NO5</sub>
+											</b>
+											
+											<br>
+											FNA&nbsp;&nbsp;•&nbsp;&nbsp;WIP
+											<br>
+											<br>
+											A precision platformer where each zone introduces a
+											new element.
+											<br>
+											<br>
+											<div class = "project-marquee">Art</div>
+										</div>
+									</center>
 								</div>
-							</center>
+							</div>
+						</div>
+						
+						<div id = "fan-made">
+							<p class = "section">&nbsp;<b>Fan Works</b></p>
+							
+							<div class = "project">
+								<a href = "ntmai" style = "color: inherit">
+									<img class = "project-image" src = "assets/icon_NTMAi.png" alt = "Nobody Told Me About id">
+									<div class = "project-title">NOBODY TOLD ME ABOUT ID <i class="fa fa-external-link"></i></div>
+									
+									<div class = "project-overlay">
+										<center>
+											<div class = "project-text">
+												<br>
+												<b><big><big>Nobody Told Me About id</big></big></b>
+												<br>
+												GZDoom&nbsp;&nbsp;•&nbsp;&nbsp;2019
+												<br>
+												<br>
+												A gameplay mod that faithfully turns DOOM into
+												the likes of Duke Nukem 3D, Blood and Shadow
+												Warrior.
+												<br>
+												<br>
+												<div class = "project-marquee">Programming&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
+											</div>
+										</center>
+									</div>
+								</a>
+							</div>
+							
+							<div class = "project">
+								<img class = "project-image" src = "assets/icon_Project-Nightmare.png" alt = "Project Nightmare">
+								<div class = "project-title">PROJECT NIGHTMARE</div>
+								
+								<div class = "project-overlay">
+									<center>
+										<div class = "project-text">
+											<br>
+											
+											<b>
+												<big><big>Project Nightmare</big></big>
+												<br>
+												<sub>Nightmare Club</sub>
+											</b>
+											
+											<br>
+											GameMaker&nbsp;&nbsp;•&nbsp;&nbsp;WIP
+											<br>
+											<br>
+											A proof-of-concept remake of Adrien Dittrick's
+											Nintendo Nightmare.
+											<br>
+											<br>
+											<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
+										</div>
+									</center>
+								</div>
+							</div>
+							
+							<div class = "project">
+								<img class = "project-image" src = "assets/icon_CHALLENJOURED-TOUR.png" alt = "CHALLENJOURED: TOUR">
+								<div class = "project-title">CHALLENJOURED: TOUR</div>
+								
+								<div class = "project-overlay">
+									<center>
+										<div class = "project-text">
+											<br>
+											<b><big><big>CHALLENJOURED: TOUR</big></big></b>
+											<br>
+											MBF21&nbsp;&nbsp;•&nbsp;&nbsp;WIP
+											<br>
+											<br>
+											A 3-episode map pack for MBF21-compatible DOOM
+											source ports.
+											<br>
+											<br>
+											<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
+										</div>
+									</center>
+								</div>
+							</div>
 						</div>
 					</div>
 					
-					<div class = "project">
-						<img class = "project-image" src = "assets/icon_CHALLENJOURED-TOUR.png" alt = "CHALLENJOURED: TOUR">
-						<div class = "project-title">CHALLENJOURED: TOUR</div>
+					<div id = "about" style = "text-align: center; margin-top: 7vh; margin-bottom: 7vh; font-size: 0.8vw">
+						<sub>Last updated May 5, 2023</sub><br>
 						
-						<div class = "project-overlay">
-							<center>
-								<div class = "project-text">
-									<br>
-									<b><big><big>CHALLENJOURED: TOUR</big></big></b>
-									<br>
-									MBF21&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-									<br>
-									<br>
-									A 3-episode map pack for MBF21-compatible DOOM
-									source ports.
-									<br>
-									<br>
-									<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
-								</div>
-							</center>
-						</div>
+						<script type = "text/javascript">
+							var mascots = [
+								// image, name, franchise
+								["Hunk", "Hunk", "Hunk Quest"],
+								["Lank", "Lank", "Hunk Quest"],
+								["Junktroop", "Junktroop", "Hunk Quest"],
+								["Gilbert", "Gilbert", "dnb"],
+							]
+							
+							var mascot = mascots[Math.floor(Math.random() * mascots.length)]
+							
+							document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")
+						</script>
 					</div>
 				</div>
 			</div>
-			
-			<div id = "about" style = "margin-top: 3.6%; font-size: 100%">
-				<sub>Last updated May 1, 2023</sub>
-				
-				<div id = "random-mascot">
-					<script type="text/javascript">
-						var mascots = [
-							// image, name, franchise
-							["Hunk", "Hunk", "Hunk Quest"],
-							//["Grunk", "Grunk", "Hunk Quest"],
-							//["Spangler", "Spangler", "Hunk Quest"],
-							//["Dud", "Dud", "Hunk Quest"],
-							//["Cop", "Cop", "Hunk Quest"],
-							["Lank", "Lank", "Hunk Quest"],
-							["Junktroop", "Junktroop", "Hunk Quest"],
-							["Gilbert", "Gilbert", "dnb"],
-						]
-						
-						var mascot = mascots[Math.floor(Math.random() * mascots.length)]
-						
-						document.write("<img class = \"mascot\" src = \"assets/mascot_" + mascot[0] + ".png\">")
-						document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")
-					</script>
-				</div>
-			</div>
+		</div>
+		
+		<div id = "random-mascot">
+			<script type = "text/javascript">
+				document.write("<img class = \"mascot\" src = \"assets/mascot_" + mascot[0] + ".png\">")
+			</script>
 		</div>
 	</body>
 </html>

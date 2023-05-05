@@ -5,8 +5,22 @@
 		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
 		
 		<style>
+			.page {
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				overflow-y: auto;
+			}
+			
+			.page-items {
+				min-height: 0
+			}
+			
 			img.logo {
-				width: 40%;
+				margin-bottom: 3vh;
+				width: 32vw;
 			}
 			
 			@font-face {
@@ -25,36 +39,37 @@
 				color: #CC1700;
 			}
 			
-			.title {
-				font-size: 64px;
-				font-family: Doom2016Text;
-				letter-spacing: 2px;
-			}
-			
 			.inline {
 				margin: auto;
 				inline-size: 75%;
-				font-size: 24px;
+				font-size: 1.25vw;
 			}
 			
 			.header {
 				background-color: #232629;
-				font-size: 56px;
+				font-size: 3vw;
 				font-family: Doom2016Text;
-				letter-spacing: 2px;
+				letter-spacing: 0.125vw;
 			}
 			
 			.cover {
 				background-color: #232629;
+				font-size: 0.9vw;
+			}
+			
+			.buttons {
+				font-size: 0.8vw;
+				margin-top: 1vh;
+				margin-bottom: -1vh;
 			}
 			
 			.button {
-				padding: 10px;
+				padding: 0.6vw;
 				display: inline-block;
 				transition: all .2s ease;
 				width: auto;
 				margin: 0.8vw;
-				font-size: 25px;
+				font-size: 1.25vw;
 				background-color: #FFFFFF;
 				color: #232629;
 				text-align: center;
@@ -74,36 +89,33 @@
 			}
 			
 			.gallery img {
-				width: 320px;
-				padding: 8px;
+				width: 17.5vw;
+				padding: 0.32vw;
 			}
 		</style>
 	</head>
 	
 	<body style = "background-color: #232629">
-		<div id = "main" style = "text-align: center; top: 64px; width: 100%; font-family: EternalUiRegular; color: #FFFFFF;">
-			<div id = "body" style = "max-width: 75%; margin: auto; background-color: #9F1700; margin-top: -10px; margin-bottom: -10px">
-				<br>
-				<br>
-				<a href = "/"><img class = "logo" src = "assets/logo.png"></img></a>
-				<br>
-				<br>
-				<br>
-				
-				<div id = "header" class = "header" style = "font-size: 56px; font-family: Doom2016Text">
-					NOBODY TOLD ME ABOUT ID
-					<img src = "assets/ntmai/ntmai.png" style = "width: 100%; vertical-align: middle"></img>
-					A BUILD ENGINE-STYLE GAMEPLAY MOD FOR GZDOOM
-				</div>
-				
-				<br>
-				
-				<div id = "buttons">
-					<a href = "https://github.com/LocalInsomniac/NTMAi" class = "button"><i class = "fa fa-github"></i> GitHub</a>
-					<a href = "https://github.com/LocalInsomniac/NTMAi/releases/latest" class = "button"><i class = "fa fa-download"></i> Download<b>*</b></a>
-					<a href = "https://discord.gg/RxWqRb2uQB" class = "button"><i class = "fa-brands fa-discord"></i> Discord</a>
-					<br>
-					<sub><b>*</b>Requires GZDoom 4.10 or newer and a legal copy of Classic DOOM.</sub>
+		<div id = "main" style = "text-align: center; font-family: EternalUiRegular; color: #FFFFFF;">
+			<div id = "body" style = "max-width: 75vw; margin: auto; background-color: #9F1700; margin-top: -10px; margin-bottom: -10px">
+				<div class = "page">
+					<div class = "page-items">
+						<a href = "/"><img class = "logo" src = "assets/logo.png"></img></a>
+						
+						<div id = "header" class = "header">
+							NOBODY TOLD ME ABOUT ID
+							<img src = "assets/ntmai/ntmai.png" style = "width: 100%; vertical-align: middle"></img>
+							A BUILD ENGINE-STYLE MOD FOR GZDOOM
+						</div>
+						
+						<div id = "buttons" class = "buttons">
+							<a href = "https://github.com/LocalInsomniac/NTMAi" class = "button"><i class = "fa fa-github"></i> GitHub</a>
+							<a href = "https://github.com/LocalInsomniac/NTMAi/releases/latest" class = "button"><i class = "fa fa-download"></i> Download<b>*</b></a>
+							<a href = "https://discord.gg/RxWqRb2uQB" class = "button"><i class = "fa-brands fa-discord"></i> Discord</a>
+							<br>
+							<sub><b>*</b>Requires GZDoom 4.10 or newer and a legal copy of Classic DOOM.</sub>
+						</div>
+					</div>
 				</div>
 				
 				<br>
@@ -112,7 +124,7 @@
 					<br>
 					<br>
 					<br>
-					<a class = "title">DOOM FROM AN ALTERNATE UNIVERSE</a>
+					<a class = "header">DOOM FROM AN ALTERNATE UNIVERSE</a>
 					<br>
 					<br>
 					
@@ -146,7 +158,7 @@
 						<br>
 					</p>
 					
-					<a class = "title">HURT ME PLENTY MORE</a>
+					<a class = "header">HURT ME PLENTY MORE</a>
 					<br>
 					<br>
 					
@@ -176,22 +188,24 @@
 					<br>
 				</div>
 				
-				<br>
-				<br>
-				<br>
-				
-				<sub>
-					<b>Last updated April 27, 2023</b>
+				<div id = "about" style = "font-size: 0.88vw">
 					<br>
-					Nobody Told Me About id is a non-profit fan project. All games referenced are copyrighted by their respective owners.
 					<br>
-					Original artwork created by 3D Realms and edited by Kinsie and IDDQD_1337.
-				</sub>
-				
-				<br>
-				<br>
-				<br>
-				<br>
+					<br>
+					
+					<sub>
+						<b>Last updated May 5, 2023</b>
+						<br>
+						Nobody Told Me About id is a non-profit fan project. All games referenced are copyrighted by their respective owners.
+						<br>
+						Original artwork created by 3D Realms and edited by Kinsie and IDDQD_1337.
+					</sub>
+					
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
 			</div>
 		</div>
 	</body>
