@@ -5,6 +5,22 @@
 		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
 		
 		<style>
+			body {
+				animation: intro ease 1.25s;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+			}
+			
+			@keyframes intro {
+				0% {
+					opacity: 0;
+				}
+				
+				100% {
+					opacity: 1;
+				}
+			}
+			
 			.page {
 				height: 100vh;
 				display: flex;
@@ -325,7 +341,7 @@
 					</div>
 					
 					<div id = "about" style = "text-align: center; margin-top: 7vh; margin-bottom: 7vh; font-size: 0.8vw">
-						<sub>Last updated May 7, 2023</sub><br>
+						<sub>Last updated May 10, 2023</sub><br>
 						
 						<script type = "text/javascript">
 							var mascots = [
