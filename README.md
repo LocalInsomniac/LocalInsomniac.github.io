@@ -9,3 +9,5 @@ Can't Sleep's homepage.
 **Forced Square** by Friendly Fonts
 
 Icons from **Font Awesome**
+
+**Typewriter** by Simon Shahriveri 
