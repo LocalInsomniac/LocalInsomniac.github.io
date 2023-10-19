@@ -4,82 +4,7 @@
 		<link rel = "icon" type = "image/x-icon" href = "assets/favicon.ico"></link>
 		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
 		
-		<script type = "text/javascript">
-			var TxtType = function(el, toRotate, period) {
-				this.toRotate = toRotate;
-				this.el = el;
-				this.loopNum = 0;
-				this.period = parseInt(period, 10) || 2000;
-				this.txt = '';
-				this.tick();
-				this.isDeleting = false;
-			};
-
-			TxtType.prototype.tick = function() {
-				var i = this.loopNum % this.toRotate.length;
-				var fullTxt = this.toRotate[i];
-
-				if (this.isDeleting) {
-				this.txt = fullTxt.substring(0, this.txt.length - 1);
-				} else {
-				this.txt = fullTxt.substring(0, this.txt.length + 1);
-				}
-
-				this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-				var that = this;
-				var delta = 75 - Math.random() * 25;
-
-				if (this.isDeleting) { delta /= 2; }
-
-				if (!this.isDeleting && this.txt === fullTxt) {
-				delta = this.period;
-				this.isDeleting = true;
-				} else if (this.isDeleting && this.txt === '') {
-				this.isDeleting = false;
-				this.loopNum++;
-				delta = 500;
-				}
-
-				setTimeout(function() {
-				that.tick();
-				}, delta);
-			};
-
-			window.onload = function() {
-				var elements = document.getElementsByClassName('typewrite');
-				for (var i=0; i<elements.length; i++) {
-					var toRotate = elements[i].getAttribute('data-type');
-					var period = elements[i].getAttribute('data-period');
-					if (toRotate) {
-					  new TxtType(elements[i], JSON.parse(toRotate), period);
-					}
-				}
-				// INJECT CSS
-				var css = document.createElement("style");
-				css.type = "text/css";
-				css.innerHTML = ".typewrite > .wrap { border-right: 0em solid rgba(0.0, 0.0, 0.0, 0.0)}";
-				document.body.appendChild(css);
-			};
-		</script>
-		
 		<style type = "text/css">
-			body {
-				animation: intro ease 1.25s;
-				animation-iteration-count: 1;
-				animation-fill-mode: forwards;
-			}
-			
-			@keyframes intro {
-				0% {
-					opacity: 0;
-				}
-				
-				100% {
-					opacity: 1;
-				}
-			}
-			
 			.page {
 				height: 100vh;
 				display: flex;
@@ -101,11 +26,8 @@
 				text-align: center;
 			}
 			
-			img.mascot {
-				position: fixed;
-				width: 12%;
-				left: 0.5vw;
-				bottom: 1vh;
+			#links {
+				margin-top: 2vh;
 			}
 			
 			#links a {
@@ -113,142 +35,29 @@
 				text-decoration: none;
 				color: #598EB2;
 				transition: all .25s ease;
+				font-size: 2.5vw;
 			}
 			
 			#links a:hover {
 				-webkit-transform: scale(1.5);
 			}
-			
-			.project {
-				display: inline-block;
-				position: relative;
-				transition: all .25s ease;
-				overflow: hidden;
-				border-radius: 0.8vw;
-				width: 20vw;
-				height: auto;
-				margin: 0.5vw;
-			}
-			
-			.project-image {
-				display: block;
-				transition: .25s ease;
-				width: 100%;
-				height: auto;
-			}
-			
-			.project-title {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				font-size: 0.7vw;
-				background-color: rgba(0.137, 0.149, 0.161, 0.6);
-				padding-top: 0.25vh;
-				padding-left: 0.5vw;
-				padding-bottom: 0.25vh;
-				padding-right: 1.5vw;
-				border-bottom-right-radius: 1.6vw;
-				transition: .25s ease;
-				font-family: 'forced_square';
-			}
-			
-			@font-face {
-				font-family: 'forced_square';
-				src: url('assets/forced_square-webfont.woff2') format('woff2'),
-					 url('assets/forced_square-webfont.woff') format('woff');
-			}
-			
-			.project-overlay {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				opacity: 0;
-				visibility: none;
-				transition: .25s ease;
-				background-color: rgba(0, 0, 0, 0.6);
-			}
-			
-			.project-text {
-				max-width: 75%;
-				font-size: 0.84vw;
-			}
-			
-			.project-marquee {
-				white-space: nowrap;
-				display: inline-block;
-				padding-left: 125%;
-				animation: marquee 9.6s linear infinite;
-				font-weight: bold;
-				overflow: hidden;
-			}
-			
-			@keyframes marquee {
-				0%   { transform: translate(0, 0); }
-				100% { transform: translate(-125%, 0); }
-			}
-			
-			.project:hover .project-title {
-				transform: translate(0, -2.5vh);
-			}
-			
-			.project:hover .project-image {
-				transform: scale(1.2);
-			}
-			
-			.project:hover .project-overlay {
-				opacity: 1;
-			}
-			
-			.section {
-				font-size: 2.4vw;
-				user-select: none;
-			}
-			
-			.bio {
-				font-size: 1.5vw;
-				text-align: center;
-				min-width: 50vw;
-				min-height: 12.5vh;
-				user-select: none;
-			}
-			
-			.caret {
-				animation: 1s linear infinite condemned_blink_effect;
-			}
-			
-			@keyframes condemned_blink_effect {
-				0% {
-					visibility: hidden;
-				}
-				
-				50% {
-					visibility: hidden;
-				}
-				
-				100% {
-					visibility: visible;
-				}
-			}
 		</style>
 	</head>
 	
 	<body style = "background-color: #232629; margin: 0; padding: 0">
-		<div id = "main" style = "font-family: calibri; color: #FFFFFF;">
+		<div id = "main" style = "font-family: tahoma; color: #FFFFFF;">
 			<div id = "intro" class = "page">
 				<div class = "page-items">
 					<img class = "logo" src = "assets/logo.png"></img>
 					
 					<div id = "links" style = "font-size: 3.6vw; user-select: none; text-align: center">
-						<p>
 							<a href = "https://discord.com/users/871682109050322984">
 								<span title = "Discord (cant_sleep)">
 									<i class = "fa-brands fa-discord"></i>
 								</span>
 							</a>
 							
-							&nbsp;&nbsp;
+							&nbsp;
 							
 							<a href = "https://twitter.com/_LocalInsomniac">
 								<span title = "Twitter (@_LocalInsomniac)">
@@ -256,23 +65,23 @@
 								</span>
 							</a>
 							
-							&nbsp;&nbsp;
+							&nbsp;
 							
 							<a href = "https://bsky.app/profile/cantsleep.bsky.social">
 								<span title = "Bluesky (@cantsleep.bsky.social)">
 									<i class="fa fa-square"></i>
 								</span>
 							</a>
-						</p>
-						
-						<p>
+							
+							&nbsp;
+							
 							<a href = "https://localinsomniac.newgrounds.com">
 								<span title = "Newgrounds (LocalInsomniac)">
 									&nbsp;<img src = "assets/link_newgrounds.png" style = "height: 1em"></img>
 								</span>
 							</a>
 							
-							&nbsp;&nbsp;
+							&nbsp;
 							
 							<a href = "https://github.com/LocalInsomniac">
 								<span title = "GitHub (LocalInsomniac)">
@@ -280,174 +89,16 @@
 								</span>
 							</a>
 							
-							&nbsp;&nbsp;
+							&nbsp;
 							
 							<a href = "mailto:cant.sleep@schwungus.software">
 								<span title = "Email (cant.sleep@schwungus.software)">
 									<i class = "fa fa-envelope"></i>
 								</span>
 							</a>
-						</p>
-					</div>
-					
-					<div class = "bio">
-						<span class = "typewrite" data-type = '[ "Welcome to my homepage.", "I dabble in game development and art.", "Scroll down to check out all of my contributions." ]'></span><!-- 
-					 --><span class = "caret">|</span>
 					</div>
 				</div>
 			</div>
-			
-			<div id = "content" class = "page" style = "background-color: #121315">
-				<div class = "page-items">
-					<div id = "projects">
-						<div id = "original">
-							<p class = "section">&nbsp;<b>Projects</b></p>
-							
-							<div class = "project">
-								<a href = "https://schwungus.software/hunk" style = "color: inherit">
-									<img class = "project-image" src = "assets/icon_Hunk-Quest.png" alt = "Hunk Quest">
-									<div class = "project-title">HUNK QUEST <i class="fa fa-external-link"></i></div>
-									
-									<div class = "project-overlay">
-										<center>
-											<div class = "project-text">
-												<br>
-												
-												<b>
-													<big><big>Hunk Quest</big></big>
-													<br>
-													<sub>Schwungus Software</sub>
-												</b>
-												
-												<br>
-												GameMaker&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-												<br>
-												<br>
-												An action-adventure, beat 'em up platformer
-												starring Hunk.
-												<br>
-												<br>
-												<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
-											</div>
-										</center>
-									</div>
-								</a>
-							</div>
-							
-							<div class = "project">
-								<img class = "project-image" src = "assets/icon_dnb.png" alt = "dnb">
-								<div class = "project-title">DNB</div>
-								
-								<div class = "project-overlay">
-									<center>
-										<div class = "project-text">
-											<br>
-											
-											<b>
-												<big><big>dnb</big></big>
-												<br>
-												<sub>NO5</sub>
-											</b>
-											
-											<br>
-											FNA&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-											<br>
-											<br>
-											A precision platformer where each zone introduces a
-											new element.
-											<br>
-											<br>
-											<div class = "project-marquee">Art</div>
-										</div>
-									</center>
-								</div>
-							</div>
-						</div>
-						
-						<div id = "fan-made">
-							<p class = "section">&nbsp;<b>Fan Works</b></p>
-							
-							<div class = "project">
-								<a href = "ntmai" style = "color: inherit">
-									<img class = "project-image" src = "assets/icon_NTMAi.png" alt = "Nobody Told Me About id">
-									<div class = "project-title">NOBODY TOLD ME ABOUT ID <i class="fa fa-external-link"></i></div>
-									
-									<div class = "project-overlay">
-										<center>
-											<div class = "project-text">
-												<br>
-												<b><big><big>Nobody Told Me About id</big></big></b>
-												<br>
-												GZDoom&nbsp;&nbsp;•&nbsp;&nbsp;2019
-												<br>
-												<br>
-												A gameplay mod that faithfully turns DOOM into
-												the likes of Duke Nukem 3D, Blood and Shadow
-												Warrior.
-												<br>
-												<br>
-												<div class = "project-marquee">Programming&nbsp;&nbsp;•&nbsp;&nbsp;Additional Art</div>
-											</div>
-										</center>
-									</div>
-								</a>
-							</div>
-							
-							<div class = "project">
-								<img class = "project-image" src = "assets/icon_Project-Nightmare.png" alt = "Project Nightmare">
-								<div class = "project-title">PROJECT NIGHTMARE</div>
-								
-								<div class = "project-overlay">
-									<center>
-										<div class = "project-text">
-											<br>
-											
-											<b>
-												<big><big>Project Nightmare</big></big>
-												<br>
-												<sub>Nightmare Club</sub>
-											</b>
-											
-											<br>
-											GameMaker&nbsp;&nbsp;•&nbsp;&nbsp;WIP
-											<br>
-											<br>
-											A proof-of-concept remake of Adrien Dittrick's
-											Nintendo Nightmare.
-											<br>
-											<br>
-											<div class = "project-marquee">Design&nbsp;&nbsp;•&nbsp;&nbsp;Programming&nbsp;&nbsp;•&nbsp;&nbsp;Art</div>
-										</div>
-									</center>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div id = "about" style = "text-align: center; margin-top: 7vh; margin-bottom: 7vh; font-size: 0.8vw">
-						Last updated October 18, 2023<br>
-						
-						<script type = "text/javascript">
-							var mascots = [
-								// image, name, series
-								["Hunk", "Hunk", "Hunk Quest"],
-								["Lank", "Lank", "Hunk Quest"],
-								["Gilbert", "Gilbert", "dnb"],
-							]
-							
-							var mascot = mascots[Math.floor(Math.random() * mascots.length)]
-							
-							document.write("This session's character is <b>" + mascot[1] + "</b> from <b>" + mascot[2] + "</b>!")
-						</script>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id = "random-mascot">
-			<script type = "text/javascript">
-				document.write("<img class = \"mascot\" src = \"assets/mascot_" + mascot[0] + ".png\">")
-			</script>
 		</div>
 	</body>
 </html>
