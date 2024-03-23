@@ -1,0 +1,129 @@
+@import url('/style.css');
+
+body {
+  background-color: #595D5C;
+	overflow-x: hidden;
+  overflow-y: auto;
+	display: block;
+}
+
+.background {
+  background: url("assets/hunk_background.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.background-animated {
+    animation: infinite zoomy 60s ease-in-out;
+}
+
+@keyframes zoomy {
+	0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+.main-page {
+	width: 100%;
+	height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.misc-page {
+	width: 100%;
+	height: 100vh;
+}
+
+.marquee-top {
+  position: absolute;
+  top: 2%;
+}
+
+.marquee-bottom {
+  position: absolute;
+  bottom: 2%;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 64px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.slide {
+  position: relative;
+  animation: infinite scroll 5s linear;
+}
+
+.slide img {
+  height: 56px;
+  width: auto;
+}
+
+.slide2 {
+  position: relative;
+  animation: infinite scroll 5s linear reverse;
+}
+
+.slide2 img {
+  height: 56px;
+  width: auto;
+  transform: scaleX(-100%);
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-100% - 64px)); }
+}
+
+.container {
+  margin: auto;
+  z-index: 10;
+  position: relative;
+  left: 64px;
+}
+
+.container-content {
+  background-color: #595D5C;
+  position: relative;
+  width: 608px;
+  height: 216px;
+  border-bottom-right-radius: 224px;
+  overflow: hidden;
+  padding: 32px;
+  padding-top: 48px;
+}
+
+.container-vitals {
+  background-color: #2C2D2D;
+  border-bottom-right-radius: 224px;
+  padding-left: 12px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+.container-signature {
+  position: relative;
+  right: 128px;
+  top: 32px;
+  height: 128px;
+  z-index: 12;
+  animation: infinite float 3s ease-in-out;
+  image-rendering: pixelated;
+}
+
+@keyframes float {
+	0% { transform: translateY(-4px); }
+	50% { transform: translateY(4px); }
+  100% { transform: translateY(-4px); }
+}

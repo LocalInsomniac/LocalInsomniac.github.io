@@ -27,10 +27,7 @@ body {
 }
 
 .background-animated {
-	animation-name: hello;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-out;
+	animation: normal hello 4s ease-out forwards;
 }
 
 @keyframes hello {
