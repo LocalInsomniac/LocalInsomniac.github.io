@@ -4,23 +4,29 @@ body {
 	background-color: #450C04;
 	overflow: auto;
 	display: block;
+	width: 100%;
+	height: max-content;
+}
+
+.cover {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .contents {
 	margin-top: 0;
-	margin-bottom: 64px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	margin-bottom: 64px;
 	padding-left: 32px;
 	padding-right: 32px;
-	padding-top: 24px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	width: 720px;
+	height: max-content;
 	background-color: black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	overflow-x: hidden;
-	overflow-y: auto;
+	display: block;
 }
 
 .header {
@@ -61,7 +67,7 @@ body {
 }
 
 .footer {
-	margin-top: 16px;
+	margin-top: 24px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -93,8 +99,11 @@ img[modal] {
 
 .gallery {
 	display: flex;
-	width: 83%;
-	min-height: 130px;
+	gap: 16px;
 	overflow-x: scroll;
 	overflow-y: hidden;
+}
+
+.gallery img {
+	max-height: 143px;
 }
