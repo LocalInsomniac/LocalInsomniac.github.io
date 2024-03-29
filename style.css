@@ -184,3 +184,37 @@ footer img {
 .tiny {
 	font-size: 80%;
 }
+
+img.modal:hover {
+	animation: shake 0.25s;
+	animation-iteration-count: infinite;
+}
+
+#modal-popup {
+	visibility: hidden;
+
+	width: 100vw;
+	height: 100vh;
+
+	position: fixed;
+
+	z-index: 1000;
+	background: transparent;
+}
+
+#modal-popup.up {
+	visibility: visible;
+	background: rgba(0.0, 0.0, 0.0, 0.5);
+}
+
+#modal-popup > * {
+	max-width: 80%;
+	max-height: 80%;
+
+	position: fixed;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translateX(-50%) translateY(-50%);
+}
