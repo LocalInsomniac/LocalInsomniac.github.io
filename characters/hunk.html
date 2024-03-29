@@ -67,29 +67,31 @@
 			</div>
 
 			<div class = "container">
-				<img class = "container-pose" src = "assets/hunk_pose.png"></img>
-				<img class = "container-signature" src = "assets/hunk_signature.png"></img>
+				<header>
+					<img class = "container-pose" src = "assets/hunk_pose.png"></img>
+					<img class = "container-signature" src = "assets/hunk_signature.png"></img>
 
-				<div class = "container-content">
-					<div class = "container-vitals">
-						<p><h1><i>i</i></h1></p>
+					<div class = "container-content">
+						<div class = "container-vitals">
+							<p><h1><i>i</i></h1></p>
+
+							<p>
+								<b>{ SERIES:</b> Hunk Quest | <b>OCCUPATION:</b> Civilian<br>
+								<b>{ AGE:</b> ? | <b>HEIGHT:</b> 100cm | <b>GENDER:</b> Male
+							</p>
+						</div>
 
 						<p>
-							<b>{ SERIES:</b> Hunk Quest | <b>OCCUPATION:</b> Civilian<br>
-							<b>{ AGE:</b> ? | <b>HEIGHT:</b> 100cm | <b>GENDER:</b> Male
+							Nobody really knows where <b>Hunk</b> came from. All we
+							know is that ever since he appeared, his taller,
+							lankier counterpart always comes around causing trouble
+							across Dollop. As the perfect candidate<br>in liftocracy,
+							Hunk is the only guy who has more than enough<br>muscle
+							to stop <b>Lank</b>, and you had best hope you aren't<br>
+							standing in his way.
 						</p>
 					</div>
-
-					<p>
-						Nobody really knows where <b>Hunk</b> came from. All we
-						know is that ever since he appeared, his taller,
-						lankier counterpart always comes around causing trouble
-						across Dollop. As the perfect candidate<br>in liftocracy,
-						Hunk is the only guy who has more than enough<br>muscle
-						to stop <b>Lank</b>, and you had best hope you aren't<br>
-						standing in his way.
-					</p>
-				</div>
+				</header>
 			</div>
 
 			<div class = "marquee-bottom">
@@ -149,7 +151,7 @@
 		</div>
 
 		<div class = "misc-page">
-			<div class = "misc-contents">
+			<main>
 				<div class = "misc-section">
 					<div class = "misc-side">
 						<h1>§ CONCEPT</h1>
@@ -170,7 +172,7 @@
 
 					<div class = "misc-side">
 						<center>
-							<img src = "assets/hunk_first.png" modal></img><br><br>
+							<img src = "assets/hunk_first.png" class = "modal modal-icon"></img><br><br>
 							<sub>First encounter of Hunk</sub>
 						</center>
 					</div>
@@ -179,14 +181,14 @@
 				<div class = "misc-section">
 					<div class = "misc-side">
 						<center>
-							<img src = "assets/hunk_faces.png" modal></img><br><br>
+							<img src = "assets/hunk_faces.png" class = "modal modal-icon"></img><br><br>
 							<sub>The many faces of Hunk</sub>
 						</center>
 					</div>
 					
 					<div class = "misc-side">
 						<h1>§ TRIVIA</h1>
-
+						
 						<ul>
 							<li>Hunk has no expressions. He just always smiles. Always.</li>
 							<li>Hunk doesn't talk. Anyone conversing with him somehow guesses what he wants with pinpoint accuracy.</li>
@@ -195,17 +197,19 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</main>
 
-		   <div class = "misc-footer">
+		   <footer>
 				<a href = "/index.html"><img src = "/assets/logo.png" class = "misc-footer-logo"></img></a>
 				<br><br>
 
-				<sub>
+				<p class = "tiny">
 					All content © respective owners.<br>
 					Last updated: <span id = "lastUpdated"></span>
-				</sub>
-			</div>
+				</p>
+			</footer>
 	 	</div>
+
+		 <script src="/modal.js"></script>
 	</body>
 </html>
