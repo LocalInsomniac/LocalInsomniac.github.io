@@ -9,10 +9,10 @@ body {
 
 .background-container {
 	position: absolute;
-    top: 0%;
-    left: 0%;
-	width: 100vw;
-    height: 100vh;
+        top: 0%;
+        left: 0%;
+    	width: 100vw;
+        height: 100vh;
 	overflow: hidden;
 	background-color: #232629;
 }
@@ -115,11 +115,21 @@ img[modal] {
 	text-align: center;
 }
 
-.footer {
+header {
 	text-align: center;
 }
 
-.footer img {
+header .title {
+	font-size: 200%;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+footer {
+	text-align: center;
+}
+
+footer img {
 	vertical-align: middle;
 }
 
@@ -169,4 +179,8 @@ img[modal] {
 	display: inline;
 	font-style: normal;
 	font-size: 50%;
+}
+
+.tiny {
+	font-size: 80%;
 }
