@@ -2,110 +2,82 @@
 	<head>
 		<title>Can't Sleep</title>
 		<link rel = "icon" type = "image/x-icon" href = "assets/favicon.ico"></link>
-		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
-		
-		<style type = "text/css">
-			.page {
-				height: 100vh;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				overflow-y: auto;
-			}
-			
-			.page-items {
-				min-height: 0;
-			}
-			
-			img.logo {
-				width: 32.5vw;
-				display: block;
-				margin: 0 auto;
-				padding: 0;
-				text-align: center;
-			}
-			
-			#links {
-				margin-top: 2vh;
-			}
-			
-			#links a {
-				display: inline-block;
-				text-decoration: none;
-				color: #598EB2;
-				font-size: 2.5vw;
-			}
-			
-			#links a:hover {
-				-webkit-transform: scale(1.25);
-			}
-		</style>
+		<link rel = "stylesheet" href = "style.css">
+		<script type = "text/javascript" src = "info.js"></script>
 	</head>
 	
-	<body style = "background-color: #232629; margin: 0; padding: 0">
-		<div id = "main" style = "font-family: tahoma; color: #FFFFFF;">
-			<div id = "intro" class = "page">
-				<div class = "page-items">
-					<img class = "logo" src = "assets/logo.png"></img>
-					
-					<div id = "links" style = "font-size: 3.6vw; user-select: none; text-align: center">
-							<a href = "https://discord.com/users/871682109050322984">
-								<span title = "Discord (cant_sleep)">
-									<i class = "fa-brands fa-discord"></i>
-								</span>
-							</a>
-							
-							&nbsp;
-							
-							<a href = "https://twitter.com/_LocalInsomniac">
-								<span title = "Twitter (@_LocalInsomniac)">
-									<i class = "fa fa-twitter"></i>
-								</span>
-							</a>
-							
-							&nbsp;
-							
-							<a href = "https://bsky.app/profile/cantsleep.bsky.social">
-								<span title = "Bluesky (@cantsleep.bsky.social)">
-									<i class="fa fa-square"></i>
-								</span>
-							</a>
-							
-							&nbsp;
-							
-							<a href = "https://localinsomniac.newgrounds.com">
-								<span title = "Newgrounds (LocalInsomniac)">
-									<img src = "assets/link_newgrounds.png" style = "height: 1em"></img>
-								</span>
-							</a>
-							
-							&nbsp;
-							
-							<a href = "https://github.com/LocalInsomniac">
-								<span title = "GitHub (LocalInsomniac)">
-									<i class = "fa fa-github"></i>
-								</span>
-							</a>
-							
-							&nbsp;
-							
-							<a href = "mailto:cant.sleep@schwungus.software">
-								<span title = "Email (cant.sleep@schwungus.software)">
-									<i class = "fa fa-envelope"></i>
-								</span>
-							</a>
-							
-							<p>
-								<a href = "https://schwungus.software">
-									<span title = "Schwungus Software">
-										<img src = "assets/link_schwungus.png" style = "height: 2em"></img>
-									</span>
-								</a>
-							</p>
-					</div>
-				</div>
-			</div>
+	<body>
+		<div class = "background-container"><div class = "background background-animated"></div></div>
+		
+		<img class = "gang gang-animated" src = "assets/gang_hunk.png"></img>
+		
+		<div class = "contents contents-animated">
+    			<header>
+        			<center><img src = "assets/logo.png" style = "width: 80%"></img></center>
+        			
+        			<p class = "links">
+        				[
+        				<a href = "https://discord.com/users/871682109050322984">DISCORD</a>
+        				|
+        				<a href = "https://twitter.com/_LocalInsomniac">TWITTER</a>
+        				|
+        				<a href = "https://localinsomniac.newgrounds.com/">NEWGROUNDS</a>
+        				|
+        				<a href = "https://github.com/LocalInsomniac">GITHUB</a>
+        				|
+        				<a href = "mailto:cant.sleep@schwungus.software">EMAIL</a>
+        				]
+        			</p>
+    			</header>
+			
+			<div class = "separator"></div>
+
+			<main>
+        			<p>
+        				Thanks for stopping by.
+        			</p>
+        			<p>
+        				This website works as a sort of portal to all of my social
+        				media profiles and projects.
+        			</p>
+        			<p>
+        				My main interest is programming and game development; most of
+        				my works are made in GameMaker, C++ or C#.
+        			</p>
+        			<p>
+        				I'm also quite avid when it comes to art and 3D modelling on
+        				Blender.
+        			</p>
+        			<p>
+        				Music making may not be my strongest suit, but I still do it
+        				from time to time.
+        			</p>
+        			<p>
+        				I may also be known as "LocalInsomniac".
+        			</p>
+			</main>
+			
+			<div class = "separator"></div>
+			
+			<footer>
+				<p>
+					[
+					<a href = "projects.html">PROJECTS</a>
+					|
+					<span title = "Under construction"><img src = "assets/wip.png"></img> CHARACTERS</span><!-- <a href = "characters">CHARACTERS</a> -->
+					|
+					<a href = "https://schwungus.software">SCHWUNGUS SOFTWARE</a>
+					]
+				</p>
+				
+				<div class = "hunk"><img src = "assets/hunkathon.png" class = "hunk" title = "Photographs by Soh and pieorpi.
+Also check out nonk.dev!"></img></div>
+				
+				<p class="tiny">
+					All content © respective owners.<br>
+					Last updated: <span id = "lastUpdated"></span>
+				</p>
+			</footer>
 		</div>
 	</body>
 </html>

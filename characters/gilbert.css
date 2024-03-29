@@ -1,0 +1,19 @@
+@import url('characters.css');
+
+body {
+    background-color: #8F8F8F;
+}
+
+.background {
+    background: url("assets/gilbert_background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container-content {
+    background-color: #8F8F8F;
+}
+
+.container-vitals {
+    background-color: #474747;
+}
