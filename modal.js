@@ -1,11 +1,11 @@
 const modalPopup = document.createElement("div");
 
 modalPopup.id = "modal-popup";
-modalPopup.style.cursor = "zoom-out";
 
 modalPopup.onclick = () => {
 	modalPopup.textContent = "";
 	modalPopup.className = "";
+	modalPopup.style.cursor = "auto";
 };
 
 document.body.appendChild(modalPopup);
@@ -34,5 +34,6 @@ function makeShowModal(modal) {
 
 		biggie.style.cursor = "";
 		modalPopup.appendChild(biggie);
+		modalPopup.style.cursor = "zoom-out";
 	};
 }
