@@ -2,228 +2,102 @@
 	<head>
 		<title>Nobody Told Me About id</title>
 		<link rel = "icon" type = "image/x-icon" href = "assets/ntmai/favicon.ico"></link>
-		<script async src="https://umami.schwungus.software/script.js" data-website-id="c390c3cb-facd-4fa8-a2b8-717a74258ba5"></script>
-		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
-		
-		<style>
-			body {
-				animation: intro ease 1.25s;
-				animation-iteration-count: 1;
-				animation-fill-mode: forwards;
-			}
-			
-			@keyframes intro {
-				0% {
-					opacity: 0;
-				}
-				
-				100% {
-					opacity: 1;
-				}
-			}
-			
-			.page {
-				height: 100vh;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				overflow-y: auto;
-			}
-			
-			.page-items {
-				min-height: 0
-			}
-			
-			img.logo {
-				margin-bottom: 3vh;
-				width: 32vw;
-			}
-			
-			@font-face {
-				font-family: 'Doom2016Text';
-				src: url('assets/ntmai/Doom2016Text.woff2') format('woff2'),
-					 url('assets/ntmai/Doom2016Text.woff') format('woff');
-			}
-			
-			@font-face {
-				font-family: 'EternalUiRegular';
-				src: url('assets/ntmai/EternalUiRegular.woff2') format('woff2'),
-					 url('assets/ntmai/EternalUiRegular.woff') format('woff');
-			}
-			
-			a.custom {
-				color: #CC1700;
-			}
-			
-			.inline {
-				margin: auto;
-				inline-size: 75%;
-				font-size: 1.25vw;
-			}
-			
-			.header {
-				background-color: #232629;
-				font-size: 3vw;
-				font-family: Doom2016Text;
-				letter-spacing: 0.125vw;
-			}
-			
-			.cover {
-				background-color: #232629;
-				font-size: 0.9vw;
-			}
-			
-			.buttons {
-				font-size: 0.8vw;
-				margin-top: 1vh;
-				margin-bottom: -1vh;
-			}
-			
-			.button {
-				padding: 0.6vw;
-				display: inline-block;
-				transition: all .2s ease;
-				width: auto;
-				margin: 0.8vw;
-				font-size: 1.25vw;
-				background-color: #FFFFFF;
-				color: #232629;
-				text-align: center;
-				text-decoration: none;
-			}
-			
-			.button:hover {
-				background-color: #CC1700;
-			}
-			
-			.gallery  {
-				width: 100%:
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				user-select: none;
-			}
-			
-			.gallery img {
-				width: 17.5vw;
-				padding: 0.32vw;
-			}
-		</style>
+		<link rel = "stylesheet" href = "ntmai.css">
+		<script type = "text/javascript" src = "info.js"></script>
 	</head>
 	
-	<body style = "background-color: #232629">
-		<div id = "main" style = "text-align: center; font-family: EternalUiRegular; color: #FFFFFF;">
-			<div id = "body" style = "max-width: 75vw; margin: auto; background-color: #9F1700; margin-top: -10px; margin-bottom: -10px">
+	<body>
+		<img src = "assets/ntmai/ntmai.png" class = "cover"></img>
+		
+		<div class = "contents">
+			<div class = "header">
+				<img src = "assets/ntmai/logo.png"></img>
+				<font color = "#D7BB43"><sub>BUILD ENGINE-STYLE GAMEPLAY MOD FOR GZDOOM</sub></font>
+				
+				<p>
+					[
+					<a href = "https://github.com/LocalInsomniac/NTMAi">GITHUB</a>
+					|
+					<a href = "https://github.com/LocalInsomniac/NTMAi/releases/latest">DOWNLOAD</a>*
+					|
+					<a href = "https://discord.gg/RxWqRb2uQB">DISCORD</a>
+					]
+					<br><br>
+					<sub>*Requires GZDoom 4.10 or newer and a legal copy of Classic DOOM.</sub>
+				</p>
+			</div>
+			
+			<div class = "horizontal-separator"></div>
+			
+			<div class = "gallery">
+				<img src = "assets/ntmai/screenshot1.png" class = "modal"></img>
+				<img src = "assets/ntmai/screenshot2.png" class = "modal"></img>
+				<img src = "assets/ntmai/screenshot3.png" class = "modal"></img>
+				<img src = "assets/ntmai/screenshot4.png" class = "modal"></img>
+			</div>
+			
+			<div class = "horizontal-separator"></div>
+			
+			<div class = "section">
 				<div class = "page">
-					<div class = "page-items">
-						<a href = "/"><img class = "logo" src = "assets/logo.png"></img></a>
-						
-						<div id = "header" class = "header">
-							NOBODY TOLD ME ABOUT ID
-							<img src = "assets/ntmai/ntmai.png" style = "width: 100%; vertical-align: middle"></img>
-							A BUILD ENGINE-STYLE MOD FOR GZDOOM
-						</div>
-						
-						<div id = "buttons" class = "buttons">
-							<a href = "https://github.com/LocalInsomniac/NTMAi" class = "button"><i class = "fa fa-github"></i> GitHub</a>
-							<a href = "https://github.com/LocalInsomniac/NTMAi/releases/latest" class = "button"><i class = "fa fa-download"></i> Download<b>*</b></a>
-							<a href = "https://discord.gg/RxWqRb2uQB" class = "button"><i class = "fa-brands fa-discord"></i> Discord</a>
-							<br>
-							<sub><b>*</b>Requires GZDoom 4.10 or newer and a legal copy of Classic DOOM.</sub>
-						</div>
-					</div>
+					<h2>§ DOOM FROM AN ALTERNATE UNIVERSE</h2>
+					
+					<b>Nobody Told Me About id</b> is a love letter from DOOM
+					fans to the iconic trinity of Build Engine games; Duke
+					Nukem 3D, Blood and Shadow Warrior. Whether it be ludicrous
+					gibs or explosions, NTMAi tries its best to faithfully
+					replicate all things Build on DOOM while also enhancing
+					vanilla gameplay. Your arsenal may be tough, but some
+					enemies will have a trick or two up their sleeves...
+					<br><br>
+					NTMAi originally started off as a small project during
+					summer 2019. It went on to
+					<a href = "https://www.doomworld.com/cacowards/2020/gameplay/">win a Cacoward in 2020</a>
+					and eventually got rebooted to a much better state in early
+					2023.
 				</div>
 				
-				<br>
+				<div class = "vertical-separator"></div>
 				
-				<div id = "summary" class = "cover">
-					<br>
-					<br>
-					<br>
-					<a class = "header">DOOM FROM AN ALTERNATE UNIVERSE</a>
-					<br>
-					<br>
+				<div class = "page">
+					<h2>§ HURT ME PLENTY MORE</h2>
 					
-					<p class = "inline">
-						Nobody Told Me About id is a love letter from DOOM fans
-						to the iconic trinity of Build Engine games; Duke Nukem
-						3D, Blood and Shadow Warrior. Whether it be ludicrous
-						gore or explosions, NTMAi tries its best to faithfully
-						replicate all things Build on DOOM while also enhancing
-						the base gameplay. Your arsenal may be tough, but some
-						enemies will have a trick or two up their sleeves...
-						<br>
-						<br>
-						NTMAi originally started off as a small project during
-						summer 2019. It went on to <a href = "https://www.doomworld.com/cacowards/2020/gameplay/" class = "custom">win a Cacoward in 2020</a>
-						and eventually got rebooted to a much better state in
-						early 2023.
-						<br>
-						<br>
-						<br>
-						
-						<div class = "gallery">
-							<a href = "assets/ntmai/ntmai_base1.png"><img src = "assets/ntmai/ntmai_base1.png"></img></a>
-							<a href = "assets/ntmai/ntmai_base2.png"><img src = "assets/ntmai/ntmai_base2.png"></img></a>
-							<a href = "assets/ntmai/ntmai_base3.png"><img src = "assets/ntmai/ntmai_base3.png"></img></a>
-							<a href = "assets/ntmai/ntmai_base4.png"><img src = "assets/ntmai/ntmai_base4.png"></img></a>
-						</div>
-						
-						<br>
-						<br>
-						<br>
-					</p>
+					Want some extra challenge? NTMAi also comes with built-in
+					special support for the following PWADs:
 					
-					<a class = "header">HURT ME PLENTY MORE</a>
-					<br>
-					<br>
+					<ul>
+						<li><a href = "https://www.doomworld.com/forum/topic/125461">AD MORTEM</a></li>
+						<li><a href = "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/dbp37_augzen">AUGER;ZENITH</a></li>
+						<li><a href = "https://www.doomworld.com/idgames/levels/doom2/megawads/d64d2">DOOM 64 for DOOM II</a></li>
+						<li><a href = "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/eviternity">Eviternity</a></li>
+						<li><a href = "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mayhem19">MAYhem 2019</a></li>
+						<li><a href = "https://www.doomworld.com/idgames/?id=13600">Scythe 2</a></li>
+					</ul> 
 					
-					<p class = "inline">
-						Want some extra challenge? NTMAi also comes with built-in
-						<b>special support</b> for a select few map packs such
-						as <a href = "https://www.doomworld.com/forum/topic/125461-ad-mortem-a-mbf21-halloween-themed-megawad-new-update-phase-2-is-out/" class = "custom">AD MORTEM</a>,
-						<a href = "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/mayhem19" class = "custom">MAYhem 2019</a>
-						and <a href = "https://www.doomworld.com/idgames/?id=13600" class = "custom">Scythe 2</a>.
-						Playing on these will automatically enable badder
-						monsters and maybe even some new weapons to play with!
-						<br>
-						<br>
-						<br>
-						
-						<div class = "gallery">
-							<a href = "assets/ntmai/ntmai_extra1.png"><img src = "assets/ntmai/ntmai_extra1.png"></img></a>
-							<a href = "assets/ntmai/ntmai_extra2.png"><img src = "assets/ntmai/ntmai_extra2.png"></img></a>
-							<a href = "assets/ntmai/ntmai_extra3.png"><img src = "assets/ntmai/ntmai_extra3.png"></img></a>
-						</div>
-						
-						<br>
-						<br>
-						<br>
-					</p>
-					
-					<br>
+					Playing these will automatically enable unique content;
+					maybe even some new weapons and monsters to play with!
+				</div>
+			</div>
+			
+			<div class = "horizontal-separator"></div>
+			
+			<div class = "footer">
+				<div class = "footer-page">
+					<a href = "index.html"><img src = "assets/logo.png" class = "footer-logo"></img></a>
 				</div>
 				
-				<div id = "about" style = "font-size: 0.88vw">
-					<br>
-					<br>
-					<br>
-					
+				<div class = "footer-page2">
 					<sub>
-						<b>Last updated September 15, 2023</b>
-						<br>
-						Nobody Told Me About id is a non-profit fan project. All games referenced are copyrighted by their respective owners.
-						<br>
-						Original artwork created by 3D Realms and edited by Kinsie.
+						This is a non-profit fan project.<br>
+						Artwork by 3D Realms, edited by Kinsie.<br>
+						Logo by Craneo.
+						<br><br>All content © their respective owners.<br>
+						Last updated: <span id = "lastUpdated"></span>
 					</sub>
-					
-					<br>
-					<br>
-					<br>
-					<br>
 				</div>
 			</div>
 		</div>
+		
+		<script src = "/modal.js"></script>
 	</body>
 </html>
