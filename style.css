@@ -98,29 +98,8 @@ body {
 img[modal] {
 	margin-top: 32px;
 	max-height: 256px;
-	max-width: auto;
+	max-width: 256px;
 	cursor: zoom-in;
-}
-
-.modal-content {
-	z-index: -100;
-	opacity: 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.5);
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: 0.25s;
-	cursor: zoom-out;
-}
-
-.modal-content img {
-	max-width: 90%;
-	max-height: 90vh;
 }
 
 .separator {

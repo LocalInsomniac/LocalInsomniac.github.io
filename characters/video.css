@@ -18,3 +18,15 @@ body {
 .container-vitals {
     background-color: #63E400;
 }
+
+.misc-page {
+    color: black;
+}
+
+.misc-page h1 {
+    color: #63E400;
+}
+
+.misc-footer-logo {
+    filter: invert(1);
+}
