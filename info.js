@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			gang.src = "/assets/gang_gilbert.png";
 
 			break;
+		
+		case 2:
+			gang.src = "/assets/gang_video.png";
+
+			break;
 	}
-	
 });
