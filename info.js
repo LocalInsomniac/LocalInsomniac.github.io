@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	let gang = document.getElementById("gang");
 	const d = new Date();
 
-	switch (d.getDay() % 2) {
+	switch (d.getHours() % 3) {
 		case 0:
 			gang.src = "/assets/gang_hunk.png";
 
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		
 		case 1:
 			gang.src = "/assets/gang_gilbert.png";
-			gang.style.transform = "translateY(-25%)";
 
 			break;
 	}

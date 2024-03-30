@@ -39,10 +39,10 @@ body {
 .gang {
 	position: absolute;
 	right: 0%;
-	top: 50%;
+	bottom: 0%;
 	overflow: hidden;
 	opacity: 0.25;
-	transform: translateY(-50%);
+	transform: translateY(125px);
 }
 
 .gang-animated {
