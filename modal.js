@@ -20,20 +20,29 @@ for (const modal of modals) {
 function makeShowModal(modal) {
 	return (ev) => {
     	modalPopup.className = "up";
+		modalPopup.style.cursor = "zoom-out";
 
-		const biggie = document.createElement(modal.tagName);
-		
-		for (const attr of modal.attributes) {
-    		if (attr.name.startsWith("data-modal-")) {
-        		// TODO TODO TODO.
-        		const special = attr.name.split("data-modal-", 1)[1];
-    		} else if (attr.name != "class") {
-        		biggie.attributes.setNamedItem(attr.cloneNode());
+		let biggie;
+		let video = modal.dataset.modalVideo;
+
+		if (video) {
+			biggie = document.createElement("video");
+			biggie.src = video;
+			biggie.autoplay = true;
+			biggie.controls = true;
+			biggie.style.cursor = "auto";
+		} else {
+			biggie = document.createElement(modal.tagName);
+			
+			for (const attr of modal.attributes) {
+				if (!(attr.name.startsWith("data-modal-") || attr.name == "class")) {
+					biggie.attributes.setNamedItem(attr.cloneNode());
+				}
 			}
+
+			biggie.style.cursor = "zoom-out";
 		}
 
-		biggie.style.cursor = "";
 		modalPopup.appendChild(biggie);
-		modalPopup.style.cursor = "zoom-out";
 	};
 }
