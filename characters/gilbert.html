@@ -72,28 +72,30 @@
 			</div>
 
 			<div class = "container">
-				<img class = "container-pose" src = "/assets/under_construction.gif"></img>
-				<img class = "container-signature" src = "assets/gilbert_signature.png"></img>
+				<header>
+					<img class = "container-pose" src = "/assets/under_construction.gif"></img>
+					<img class = "container-signature" src = "assets/gilbert_signature.png"></img>
 
-				<div class = "container-content">
-					<div class = "container-vitals">
-						<p><h1><i>i</i></h1></p>
+					<div class = "container-content">
+						<div class = "container-vitals">
+							<p><h1><i>i</i></h1></p>
+
+							<p>
+								<b>{ SERIES:</b> dnb | <b>OCCUPATION:</b> Stuntman<br>
+								<b>{ AGE:</b> ? | <b>HEIGHT:</b> ? | <b>GENDER:</b> Male
+							</p>
+						</div>
 
 						<p>
-							<b>{ SERIES:</b> dnb | <b>OCCUPATION:</b> Stuntman<br>
-							<b>{ AGE:</b> ? | <b>HEIGHT:</b> ? | <b>GENDER:</b> Male
+							<b>Gil "Gilbert" Senden</b> is a cosmic stuntman
+							constantly dodging spikes and sawblades. Whether it
+							is by using pogo sticks, jetpacks or even his sweet
+							kicks, Gilbert is always knowledgeable on how to
+							move around any obstacle course. He is just the
+							coolest guy to be<br>around, overall.
 						</p>
 					</div>
-
-					<p>
-						<b>Gil "Gilbert" Senden</b> is a cosmic stuntman
-                        constantly dodging spikes and sawblades. Whether it is
-                        by using pogo sticks, jetpacks or even his sweet kicks,
-                        Gilbert is always knowledgeable on how to move around
-                        any obstacle course. He is just the coolest guy to be<br>
-                        around, overall.
-					</p>
-				</div>
+				</header>
 			</div>
 
 			<div class = "marquee-bottom">
@@ -158,7 +160,7 @@
 		</div>
 
 		<div class = "misc-page">
-			<div class = "misc-contents">
+			<main>
 				<div class = "misc-section">
 					<div class = "misc-side">
 						<h1>§ CONCEPT</h1>
@@ -178,7 +180,7 @@
 
 					<div class = "misc-side">
 						<center>
-							<img src = "assets/gilbert_first.png" modal></img><br><br>
+							<img src = "assets/gilbert_first.png" class = "modal modal-icon"></img><br><br>
 							<sub>Concept art of Gilbert in dynamic poses</sub>
 						</center>
 					</div>
@@ -187,7 +189,7 @@
 				<div class = "misc-section">
 					<div class = "misc-side">
 						<center>
-							<img src = "assets/dnb_test_thumbnail.png" modal></img><br><br>
+							<img src = "assets/dnb_test_thumbnail.png" class = "modal modal-icon" data-modal-video = "assets/dnb_test.mp4"></img><br><br>
 							<sub>Early gameplay footage of dnb</sub>
 						</center>
 					</div>
@@ -202,9 +204,9 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</main>
 
-		   <div class = "misc-footer">
+		   	<footer>
 				<a href = "/index.html"><img src = "/assets/logo.png" class = "misc-footer-logo"></img></a>
 				<br><br>
 				
@@ -212,7 +214,9 @@
 					All content © respective owners.<br>
 					Last updated: <span id = "lastUpdated"></span>
 				</sub>
-			</div>
+			</footer>
 	 	</div>
+
+		 <script type = "text/javascript" src = "/modal.js"></script>
 	</body>
 </html>

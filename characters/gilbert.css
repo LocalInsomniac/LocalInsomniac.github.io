@@ -4,6 +4,10 @@ body {
     background-color: #8F8F8F;
 }
 
+body a {
+    color: #EFB65F;
+}
+
 .background {
     background: url("assets/gilbert_background.png");
     background-size: cover;
