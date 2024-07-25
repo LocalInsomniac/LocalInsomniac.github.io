@@ -152,8 +152,6 @@ footer img {
   100% { transform: rotate(-5deg); }
 }
 
-.project-category {}
-
 .project {
 	background-color: #111214;
 	margin: 16px;
@@ -198,6 +196,10 @@ footer img {
 	background: transparent;
 	transition: 0.2s;
 	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #modal-popup.up {
@@ -206,11 +208,28 @@ footer img {
 	opacity: 1;
 }
 
-#modal-popup > * {
+#modal-popup > img {
 	max-width: 80%;
 	max-height: 80%;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+}
+
+#modal-popup > video {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+#modal-popup > p {
+	text-align: center;
+}
+
+.subgallery {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.subgallery > img {
+	margin: 16px;
+	vertical-align: middle;
 }
