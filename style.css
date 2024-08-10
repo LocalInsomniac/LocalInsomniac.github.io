@@ -79,7 +79,7 @@ body {
 
 .contents-animated {
 	animation-name: hi;
-	animation-duration: 1s;
+	animation-duration: 0.8s;
 	animation-fill-mode: forwards;
 }
 
@@ -136,9 +136,7 @@ footer img {
 }
 
 .hunk {
-	margin-left: auto;
-	margin-right: auto;
-	width: 64px;
+	width: 48px;
 }
 
 .hunk img:hover {
@@ -181,8 +179,23 @@ footer img {
 	font-size: 50%;
 }
 
+.tiny-legacy {
+	font-size: 80%;
+}
+
 .tiny {
 	font-size: 80%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.tiny div {
+	width: fit-content;
+	height: fit-content;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 
 #modal-popup {
@@ -232,4 +245,52 @@ footer img {
 .subgallery > img {
 	margin: 16px;
 	vertical-align: middle;
+}
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.banner-module2 {
+	display: flex;
+	align-items: top;
+	justify-content: center;
+	font-size: 32px;
+	margin-left: 32px;
+}
+
+.banner-module2 p {
+	margin: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+h1 span {
+	background-color: white;
+	color: #232629;
+	padding-left: 8px;
+	padding-right: 12px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+
+h1::after{
+    display: block;
+    content: "";
+    border-bottom: 1px solid white;
+}
+
+.catalogue {
+	user-select: none;
+}
+
+.catalogue img {
+	margin-left: 8px;
+	margin-right: 8px;
 }
