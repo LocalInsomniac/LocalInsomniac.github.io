@@ -27,10 +27,6 @@ body {
 	height: 100%;
 }
 
-.background-animated {
-	animation: normal hello 4s ease-out forwards;
-}
-
 @keyframes hello {
 	0% { transform: scale(1.15); opacity: 0.4; }
 	100% { transform: scale(1); opacity: 1; }
@@ -46,53 +42,19 @@ body {
 	mix-blend-mode: overlay;
 }
 
-.gang-animated {
-	animation-name: yo;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes yo {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 0.25;
-	}
-}
-
 .contents {
-	margin: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 32px;
+	margin-bottom: 32px;
 	padding: 32px;
 	width: 720px;
 	max-height: 100%;
 	background-color: #232629;
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-
-.contents-static {
 	transform: translateX(0%);
 	opacity: 1;
-}
-
-.contents-animated {
-	animation-name: hi;
-	animation-duration: 0.8s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes hi {
-	0% {
-		transform: translateX(-100%);
-		opacity: 0.325;
-	}
-
-	100% {
-		transform: translateX(0%);
-		opacity: 1;
-	}
 }
 
 .contents a {
