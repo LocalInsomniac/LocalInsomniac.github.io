@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     catalogueProjects.onmouseover = set("Projects");
     catalogueProjects.onmouseout = reset;
 
-    var catalogueSchwungus = document.getElementById("catalogue-schwungus");
+    const catalogueSchwungus = document.getElementById("catalogue-schwungus");
     catalogueSchwungus.onmouseover = set("Schwungus Software");
     catalogueSchwungus.onmouseout = reset;
 });
