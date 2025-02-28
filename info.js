@@ -1,3 +1,3 @@
-document.addEventListener("DOMContentLoaded", function (event) { 
+document.addEventListener("DOMContentLoaded", () => {
 	document.getElementById("lastUpdated").appendChild(document.createTextNode(document.lastModified));
 });
