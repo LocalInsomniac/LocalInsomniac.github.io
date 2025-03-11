@@ -1,19 +1,12 @@
-var catalogueProjects = document.getElementById("catalogue-projects");
+document.addEventListener("DOMContentLoaded", () => {
+    const set = (text) => { return () => { document.getElementById("catalogue-description").textContent = text; }; };
+    const reset = set("Click on an icon!");
 
-catalogueProjects.onmouseover = function () {
-    document.getElementById("catalogue-description").innerHTML = "Projects";
-}
+    const catalogueProjects = document.getElementById("catalogue-projects");
+    catalogueProjects.onmouseover = set("Projects");
+    catalogueProjects.onmouseout = reset;
 
-catalogueProjects.onmouseout = function () {
-    document.getElementById("catalogue-description").innerHTML = "Click on an icon!";
-}
-
-var catalogueSchwungus = document.getElementById("catalogue-schwungus");
-
-catalogueSchwungus.onmouseover = function () {
-    document.getElementById("catalogue-description").innerHTML = "Schwungus Software";
-}
-
-catalogueSchwungus.onmouseout = function () {
-    document.getElementById("catalogue-description").innerHTML = "Click on an icon!";
-}
+    const catalogueSchwungus = document.getElementById("catalogue-schwungus");
+    catalogueSchwungus.onmouseover = set("Schwungus Software");
+    catalogueSchwungus.onmouseout = reset;
+});
