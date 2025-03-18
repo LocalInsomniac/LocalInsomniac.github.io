@@ -1,6 +1,12 @@
+@font-face {
+	font-family: Consolas;
+	src: url(/assets/Consolas.ttf);
+}
+
 body {
 	margin: 0;
 	font-family: Consolas;
+	line-height: 1.25;
 	color: #FFFFFF;
 	display: flex;
 	width: 100%;
@@ -243,6 +249,7 @@ h1 span {
 	color: #232629;
 	padding-left: 8px;
 	padding-right: 12px;
+	padding-bottom: 1.2px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
 }
