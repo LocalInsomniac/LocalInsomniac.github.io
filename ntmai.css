@@ -115,3 +115,9 @@ img[modal] {
 .gallery img {
 	max-height: 143px;
 }
+
+.subtitle {
+	color: #D7BB43;
+	font-size: 12px;
+	padding-top: 8px;
+}
