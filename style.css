@@ -76,7 +76,7 @@ body {
 
 .separator {
 	height: 1px;
-	background-color: #FFFFFF;
+	background-color: gray;
 	margin-top : 48px;
 	margin-bottom : 48px;
 }
@@ -149,7 +149,7 @@ footer img {
 
 .project-separator {
 	height: 1px;
-	background-color: #FFFFFF;
+	background-color: gray;
 	margin-top : 8px;
 	margin-bottom : 8px;
 }
@@ -265,12 +265,14 @@ h1 span {
 	padding-bottom: 2px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
+	font-size: 75%;
 }
 
 h1::after{
     display: block;
     content: "";
-    border-bottom: 1px solid white;
+    height: 1px;
+    background: linear-gradient(to right, white, gray);
 }
 
 .catalogue {
