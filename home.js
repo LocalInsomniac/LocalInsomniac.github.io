@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const set = (text) => {
         return () => {
-            const catalogueDescription = document.getElementById("links-description");
+            const linksDescription = document.getElementById("links-description");
             
-            catalogueDescription.textContent = text;
-            catalogueDescription.style.opacity = 1;
+            linksDescription.textContent = text;
+            linksDescription.style.opacity = 1;
         };
     };
 
