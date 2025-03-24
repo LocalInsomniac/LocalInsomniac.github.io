@@ -6,6 +6,7 @@
 body {
 	margin: 0;
 	font-family: Consolas;
+	font-size: 15px;
 	line-height: 1.25;
 	color: #FFFFFF;
 	display: flex;
@@ -94,12 +95,14 @@ body {
 	margin-bottom: 32px;
 	padding: 32px;
 	width: 600px;
-	max-height: 100%;
+	height: min-content; /* Set height to fit the content */
+	max-height: calc(100vh - 64px); /* Adjust max-height to fit within the viewport */
 	background-color: #232629;
 	overflow-x: hidden;
 	overflow-y: auto;
 	transform: translateX(0%);
 	opacity: 1;
+	box-sizing: border-box;
 }
 
 .contents a {
@@ -133,7 +136,7 @@ body {
 }
 
 .links p {
-	font-size: initial;
+	font-size: 15px;
 }
 
 header {
@@ -253,7 +256,7 @@ h1 span {
 	color: #232629;
 	padding-left: 8px;
 	padding-right: 12px;
-	padding-bottom: 2px;
+	padding-bottom: 1px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
 	font-size: 75%;
