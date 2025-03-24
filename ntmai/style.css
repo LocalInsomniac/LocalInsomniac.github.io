@@ -2,10 +2,9 @@
 
 body {
 	background-color: #450C04;
-	overflow: auto;
 	display: block;
-	width: 100%;
 	height: max-content;
+	overflow: auto;
 }
 
 h2 {
@@ -13,27 +12,22 @@ h2 {
 }
 
 .cover {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .contents {
 	margin-top: 0;
 	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 64px;
-	padding-left: 32px;
-	padding-right: 32px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	width: 720px;
-	height: max-content;
+	padding: 32px;
+	width: 100%;
+	max-width: 720px;
 	background-color: black;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .header {
@@ -70,7 +64,8 @@ h2 {
 	width: 100%;
 	height: 1px;
 	border-top: 1px solid gray;
-	margin: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .footer {
@@ -109,15 +104,19 @@ img[modal] {
 	gap: 16px;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	width: 720px;
+	width: 100%;
 }
 
 .gallery img {
-	max-height: 143px;
+	max-height: 129px;
 }
 
 .subtitle {
 	color: #D7BB43;
 	font-size: 12px;
 	padding-top: 8px;
+}
+
+.tiny-legacy {
+	font-size: 80%;
 }

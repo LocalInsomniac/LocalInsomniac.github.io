@@ -1,22 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const set = (text, opacity = 1) => {
+    const set = (text) => {
         return () => {
-            const catalogueDescription = document.getElementById("catalogue-description");
+            const catalogueDescription = document.getElementById("links-description");
             
             catalogueDescription.textContent = text;
-            catalogueDescription.style.opacity = opacity;
+            catalogueDescription.style.opacity = 1;
         };
     };
 
-    const reset = set("Click on an icon", 0.5);
-
-    const catalogueProjects = document.getElementById("catalogue-projects");
-
-    catalogueProjects.onmouseover = set("Projects");
-    catalogueProjects.onmouseout = reset;
-
-    const catalogueSchwungus = document.getElementById("catalogue-schwungus");
-
-    catalogueSchwungus.onmouseover = set("Schwungus");
-    catalogueSchwungus.onmouseout = reset;
+    document.getElementById("links-email").onmouseover = set("Email (me@cantsleep.cc)");
+    document.getElementById("links-github").onmouseover = set("GitHub (LocalInsomniac)");
+    document.getElementById("links-discord").onmouseover = set("Discord (cant_sleep)");
+    document.getElementById("links-twitter").onmouseover = set("Twitter (@_LocalInsomniac)");
+    document.getElementById("links-bluesky").onmouseover = set("Bluesky (@cantsleep.cc)");
+    document.getElementById("links-newgrounds").onmouseover = set("Newgrounds (@LocalInsomniac)");
 });

@@ -1,0 +1,37 @@
+@import url('/style.css');
+
+.projects {
+	text-align: center;
+}
+
+.project {
+	background-color: #111214;
+	margin: 16px;
+	display: flex;
+	overflow: hidden;
+	text-align: left;
+}
+
+.project-cover {
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 200px;
+	max-height: 200px;
+    height: auto;
+}
+
+.project-text {
+	padding: 8px;
+}
+
+.project-text img {
+	vertical-align: middle;
+	padding-right: 4px;
+}
+
+.project-separator {
+	height: 1px;
+	background-color: gray;
+	margin-top : 8px;
+	margin-bottom : 8px;
+}

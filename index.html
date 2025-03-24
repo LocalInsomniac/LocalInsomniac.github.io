@@ -8,6 +8,9 @@
 		<link rel = "preload" href = "/assets/logo.png" as = "image" />
 		<link rel = "preload" href = "/assets/background.png" as = "image" />
 		<link rel = "preload" href = "/assets/gang_hunk.png" as = "image" />
+		<link rel = "preload" href = "/assets/icons/home.png" as = "image" />
+		<link rel = "preload" href = "/assets/icons/projects.png" as = "image" />
+		<link rel = "preload" href = "/assets/icons/schwungus.png" as = "image" />
 		<link rel = "icon" type = "image/x-icon" href = "/assets/favicon.ico" />
 		<link rel = "stylesheet" href = "/style.css" />
 		<script defer src = "https://umami.schwung.us/script.js" data-website-id = "40a0ba16-61a8-407b-a876-1b42949e761c"></script>
@@ -21,57 +24,53 @@
 
 		<img class = "gang" id = "gang" src = "/assets/gang_hunk.png" />
 
+		<div class = "catalog">
+			<div class = "catalog-button catalog-button-current"><img src = "/assets/icons/home.png" />home</div>
+			<a href = "projects"><div class = "catalog-button"><img src = "/assets/icons/projects.png" />projects</div></a>
+			<a href = "https://schwung.us"><div class = "catalog-button"><img src = "/assets/icons/schwungus.png" />schwungus</div></a>
+		</div>
+
 		<div class = "contents">
 			<header>
-				<div class = "banner">
-					<div class = "banner-module"><img src = "/assets/logo.png" /></div>
-
-					<div class = "banner-module2">
-						<div class = "banner-submodule">
-							<p><a href = "https://discord.com/users/871682109050322984" title = "Discord (cant_sleep)"><i class = "fa-brands fa-discord"></i></a></p>
-							<p><a href = "https://github.com/LocalInsomniac" title = "GitHub (LocalInsomniac)"><i class = "fa-brands fa-github"></i></a></p>
-							<p><a href = "mailto:me@cantsleep.cc" title = "Email (me@cantsleep.cc)"><i class = "fa-solid fa-envelope"></i></a></p>
-						</div>
-
-						<div class = "banner-submodule">
-							<p><a href = "https://twitter.com/_LocalInsomniac" title = "Twitter (@_LocalInsomniac)"><i class="fa-brands fa-twitter"></i></a></p>
-							<p><a href = "https://bsky.app/profile/cantsleep.cc" title = "Bluesky (@cantsleep.cc)"><i class="fa-brands fa-bluesky"></i></a></p>
-							<p><a href = "https://localinsomniac.newgrounds.com" title = "Newgrounds (@LocalInsomniac)"><img src = "/assets/newgrounds.png" /></a></p>
-						</div>
-					</div>
-				</div>
+				<div class = "banner"><img src = "/assets/logo.png" /></div>
 			</header>
 
-			<h1><span>WELCOME</span></h1>
+			<h1><span>welcome</span></h1>
 
 			<main>
-				<p>Thanks for stopping by.</p>
-
 				<p>
-					This website works as a sort of portal to all of my social
-					media profiles and projects.
+					Thanks for stopping by. This site is a sort of portal to
+					all of my social media profiles and projects.
 				</p>
 
 				<p>
-					My main interest is programming and game development; most of
-					my works are made in GameMaker, C++ or C#.
+					I do a lot of programming and game development; most of it
+					happens in GameMaker, C++ and C#.
+				</p>
+				
+				<p>
+					I also draw excessively on Drawpile and do 3D modelling on
+					Blender.
 				</p>
 
 				<p>
-					I also draw on Drawpile and do 3D modelling on Blender on
-					the side.<br><br>
+					Use the navigation on the left for more info!<br><br>
 				</p>
 			</main>
 
-			<h1><span>CATALOG</span></h1>
+			<h1><span>contact</span></h1>
+
+			<div class = "links">
+				<p id = "links-description" class = "indicator">Select an icon</p>
+				<a id = "links-email" href = "mailto:me@cantsleep.cc"><i class = "fa-solid fa-envelope"></i></a>
+				<a id = "links-github" href = "https://github.com/LocalInsomniac"><i class = "fa-brands fa-github"></i></a>
+				<a id = "links-discord" href = "https://discord.com/users/871682109050322984"><i class = "fa-brands fa-discord"></i></a>
+				<a id = "links-twitter" href = "https://twitter.com/_LocalInsomniac"><i class="fa-brands fa-twitter"></i></a>
+				<a id = "links-bluesky" href = "https://bsky.app/profile/cantsleep.cc"><i class="fa-brands fa-bluesky"></i></a>
+				<a id = "links-newgrounds" href = "https://localinsomniac.newgrounds.com"><img src = "/assets/newgrounds.png" /></a>
+			</div>
 
 			<footer>
-				<p id = "catalogue-description" class = "indicator">Click on an icon</p>
-
-				<div class = "catalogue">
-					<a href = "projects"><img src = "/assets/projects.png" id = "catalogue-projects" /></a><a href = "https://schwung.us"><img src = "/assets/schwungus.png" id = "catalogue-schwungus" /></a>
-				</div>
-
 				<div class = "separator"></div>
 
 				<div class = "tiny">

@@ -7,8 +7,11 @@
 		<link rel = "preload" href = "/assets/Consolas.ttf" as = "font" />
 		<link rel = "preload" href = "/assets/background.png" as = "image" />
 		<link rel = "preload" href = "/assets/gang_hunk.png" as = "image" />
+		<link rel = "preload" href = "/assets/icons/home.png" as = "image" />
+		<link rel = "preload" href = "/assets/icons/projects.png" as = "image" />
+		<link rel = "preload" href = "/assets/icons/schwungus.png" as = "image" />
 		<link rel = "icon" type = "image/x-icon" href = "/assets/favicon.ico" />
-		<link rel = "stylesheet" href = "/style.css" />
+		<link rel = "stylesheet" href = "/projects/style.css" />
 		<script defer src = "https://umami.schwung.us/script.js" data-website-id = "40a0ba16-61a8-407b-a876-1b42949e761c"></script>
 		<script type = "text/javascript" src = "/info.js"></script>
 	</head>
@@ -18,51 +21,58 @@
 
 		<img class = "gang" id = "gang" src = "/assets/gang_hunk.png" />
 
+		<div class = "catalog">
+			<a href = "/"><div class = "catalog-button"><img src = "/assets/icons/home.png" />home</div></a>
+			<div class = "catalog-button catalog-button-current"><img src = "/assets/icons/projects.png" />projects</div>
+			<a href = "https://schwung.us"><div class = "catalog-button"><img src = "/assets/icons/schwungus.png" />schwungus</div></a>
+		</div>
+
 		<div class = "contents">
-			<header>
-				<div class="title">PROJECTS</div>
-				[ <a href = "/">HOME</a> ]
-			</header>
+			<header><div class="title">projects</div></header>
 
 			<main>
 				<p>
 					These are all of the projects that I have created or been
-					involved with.<br>
+					involved with.
+				</p>
+
+				<p>
 					I work on these on my own time, which is often sparse these
 					days.
 				</p>
 
-				<h1><span>ORIGINALS</span></h1>
+				<h1><span>originals</span></h1>
 				
 				<div class = "project">
 					<div class = "project-cover"><img src = "/projects/assets/dnb.png" /></div>
 
 					<div class = "project-text">
-						<img src = "/assets/icon_wip.png" title = "Work in Progress" /><img src = "/assets/icon_game.png" title = "Game" /><a href = "https://mightcer.itch.io/dnb"><b>DNB</b></a>
+						<img src = "/assets/badges/wip.png" title = "Work in Progress" /><img src = "/assets/badges/game.png" title = "Game" /><a href = "https://mightcer.itch.io/dnb"><b>DNB</b></a>
 						<sub>Mightcer, 2025</sub>
 						<div class = "project-separator"></div>
 						A casual game with short levels and a high skill
 						ceiling. Dash and concuss your way to the end of
 						each level as fast as you can.<br><br>
-						I designed Gilbert and DNB's sound effects.
+						I designed Gilbert and DNB's sounds.
 					</div>
 				</div>
 
-				<h1><span>DOOM</span></h1>
+				<h1><span>doom</span></h1>
 
 				<div class = "project">
 					<div class = "project-cover"><img src = "/projects/assets/ntmai.png" /></div>
 
 					<div class = "project-text">
-						<img src = "/assets/icon_game.png" title = "Game" /><a href = "/ntmai"><b>NOBODY TOLD ME ABOUT ID</b></a>
+						<img src = "/assets/badges/game.png" title = "Game" /><a href = "/ntmai"><b>Nobody Told Me About id</b></a>
 						<sub>2020</sub>
 						<div class = "project-separator"></div>
-						A GZDoom mod that makes DOOM feel more like a Build
-						Engine game by replicating quirks from Duke Nukem
-						3D, PowerSlave, Blood and Shadow Warrior.<br><br>
-						Won one of the
-						<a href = "https://www.doomworld.com/cacowards/2020/gameplay/">2020 Cacowards</a>
-						on Doomworld in the Gameplay mod category.
+						A gameplay mod for GZDoom that makes DOOM feel more
+						like a Build Engine game by replicating quirks from
+						Duke Nukem 3D, PowerSlave, Blood and Shadow Warrior.
+						<br><br>
+						Won a
+						<a href = "https://www.doomworld.com/cacowards/2020/gameplay/">Gameplay Mod Award</a>
+						on Doomworld.
 					</div>
 				</div>
 			</main>
