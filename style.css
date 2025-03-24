@@ -258,11 +258,12 @@ h1 span {
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
 	font-size: 75%;
+	display: inline-block;
 }
 
-h1::after{
-    display: block;
-    content: "";
-    height: 1px;
-    background: linear-gradient(to right, white, gray);
+h1::after {
+	display: block;
+	content: "";
+	height: 1px;
+	background: linear-gradient(to right, white, gray);
 }
