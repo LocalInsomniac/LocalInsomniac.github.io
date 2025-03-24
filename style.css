@@ -53,7 +53,6 @@ body {
 	overflow-x: hidden;
 	overflow-y: auto;
 	transform: translateX(0%);
-	opacity: 1;
 	scrollbar-width: none;
 }
 
@@ -94,14 +93,13 @@ body {
 	margin-top: 32px;
 	margin-bottom: 32px;
 	padding: 32px;
-	width: 600px;
-	height: min-content; /* Set height to fit the content */
-	max-height: calc(100vh - 64px); /* Adjust max-height to fit within the viewport */
+	width: 640px;
+	height: fit-content;
+	max-height: calc(100vh - 64px);
 	background-color: #232629;
 	overflow-x: hidden;
 	overflow-y: auto;
 	transform: translateX(0%);
-	opacity: 1;
 	box-sizing: border-box;
 }
 
