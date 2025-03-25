@@ -13,10 +13,8 @@
 }
 
 .project-cover {
-	min-width: 200px;
-	min-height: 200px;
-	max-width: 200px;
-	max-height: 200px;
+	width: 200px;
+	height: 200px;
     height: auto;
 }
 
@@ -32,6 +30,6 @@
 .project-separator {
 	height: 1px;
 	background-color: gray;
-	margin-top : 8px;
-	margin-bottom : 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
