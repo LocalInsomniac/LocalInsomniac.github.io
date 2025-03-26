@@ -13,6 +13,7 @@ fetch("https://status.cafe/users/cantsleep/status.json").then( r => r.json() ).t
     switch (r.face) {
         default: head = "hunk"; break;
         case "💔": head = "junktroop"; break;
+        case "🧐": head = "burge"; break;
         case "😯": head = "junktroop"; break;
         case "🤒": head = "junktroop"; break;
         case "😡": head = "junktroop"; break;
@@ -36,6 +37,7 @@ fetch("https://status.cafe/users/cantsleep/status.json").then( r => r.json() ).t
         case "🍸": head = "burge"; break;
         case "🍾": head = "burge"; break;
         case "🍺": head = "junktroop"; break;
+        case "🫖": head = "burge"; break;
         case "☕️": head = "burge"; break;
         case "📰": head = "burge"; break;
         case "⛵": head = "burge"; break;
