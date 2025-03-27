@@ -87,14 +87,14 @@ body {
 }
 
 h1 {
-	margin: 32px 0px;
+	margin: 32px 0;
 }
 
 h1 span {
 	background-color: white;
 	color: #232629;
-	padding: 0px 8px;
-	border-radius: 16px 16px 0px 0px;
+	padding: 0 8px;
+	border-radius: 16px 16px 0 0;
 	display: inline-block;
 }
 
@@ -108,7 +108,7 @@ h1::after {
 h2 {
 	text-align: center;
 	font-size: 200%;
-	margin: 0px auto 16px auto;
+	margin: 0 auto 32px auto;
 }
 
 .hr {
@@ -136,6 +136,7 @@ h2 {
 
 #links-description {
 	opacity: 50%;
+	user-select: text;
 }
 
 .footer {
@@ -197,7 +198,7 @@ h2 {
 #hunk {
 	width: 48px;
 	vertical-align: middle;
-	margin: 0px 8px;
+	margin: 0 8px;
 }
 
 #hunk:hover {

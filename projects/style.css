@@ -1,23 +1,17 @@
 @import url('/style.css');
 
-.projects {
-	text-align: center;
-}
-
 .project {
 	background-color: #111214;
-	margin: 16px;
+	margin: 16px 0;
 	display: flex;
 	overflow: hidden;
-	text-align: left;
 }
 
 .project-cover {
 	max-width: 50%;
 	width: 200px;
 	height: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto 0;
 }
 
 .project-text {
@@ -29,7 +23,7 @@
 	padding-right: 4px;
 }
 
-.project-separator {
+.project-hr {
 	height: 1px;
 	background-color: gray;
 	margin-top: 8px;
