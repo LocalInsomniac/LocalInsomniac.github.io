@@ -93,7 +93,7 @@ h1 {
 h1 span {
 	background-color: white;
 	color: #232629;
-	padding: 0 8px;
+	padding: 0 10px 0 8px;
 	border-radius: 16px 16px 0 0;
 	display: inline-block;
 }

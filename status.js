@@ -51,6 +51,8 @@ fetch("https://status.cafe/users/cantsleep/status.json").then( r => r.json() ).t
         case "🏆": head = "burge"; break;
         case "⛳️": head = "burge"; break;
         case "🏂": head = "burge"; break;
+        case "💥": head = "junktroop"; break;
+        
     }
 
     document.getElementById("status-head").src = "/assets/heads/" + head + ".png";
