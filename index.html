@@ -4,7 +4,7 @@
 		<meta name = "viewport" content = "width=device-width, initial-scale=1" />
 		<title>Can't Sleep</title>
 		<link rel = "canonical" href = "https://cantsleep.cc/" />
-		<link rel = "preload" href = "/assets/Consolas.ttf" as = "font" />
+		<link rel = "preload" href = "/assets/Consolas.ttf" as = "font" type = "font/ttf" crossorigin />
 		<link rel = "preload" href = "/assets/logo.png" as = "image" />
 		<link rel = "preload" href = "/assets/background.png" as = "image" />
 		<link rel = "preload" href = "/assets/gang_hunk.png" as = "image" />
@@ -14,80 +14,73 @@
 		<link rel = "icon" type = "image/x-icon" href = "/assets/favicon.ico" />
 		<link rel = "stylesheet" href = "/style.css" />
 		<script defer src = "https://umami.schwung.us/script.js" data-website-id = "40a0ba16-61a8-407b-a876-1b42949e761c"></script>
-		<script type = "text/javascript" src = "/info.js"></script>
-		<script type = "text/javascript" src = "/home.js"></script>
-		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
+		<script type = "text/javascript" src = "/home.js" defer></script>
 		<script type = "text/javascript" src = "/status.js" defer></script>
+		<script type = "text/javascript" src = "/info.js" defer></script>
+		<script src = "https://kit.fontawesome.com/069decd2d9.js" crossorigin = "anonymous"></script>
 	</head>
 
 	<body>
-		<div class = "background-container"><div class = "background"></div></div>
+		<main>
+			<img class = "gang" src = "assets/gang_hunk.png" />
 
-		<img class = "gang" id = "gang" src = "/assets/gang_hunk.png" />
+			<div class = "cols">
+				<section id = "menu">
+					<div class = "menu-button menu-button-current"><img src = "/assets/icons/home.png" />home</div>
+					<a href = "projects"><div class = "menu-button"><img src = "/assets/icons/projects.png" />projects</div></a>
+					<a href = "https://schwung.us"><div class = "menu-button"><img src = "/assets/icons/schwungus.png" />schwungus</div></a>
+				</section>
 
-		<div class = "catalog">
-			<div class = "catalog-button catalog-button-current"><img src = "/assets/icons/home.png" />home</div>
-			<a href = "projects"><div class = "catalog-button"><img src = "/assets/icons/projects.png" />projects</div></a>
-			<a href = "https://schwung.us"><div class = "catalog-button"><img src = "/assets/icons/schwungus.png" />schwungus</div></a>
-		</div>
+				<section id = "contents">
+					<img src = "/assets/logo.png" id = "logo" />
+					
+					<h1><span>welcome</span></h1>
 
-		<div class = "contents">
-			<header>
-				<div class = "banner"><img src = "/assets/logo.png" /></div>
-			</header>
+					<p>
+						Thanks for stopping by. This site works as a portal to all
+						of my social media profiles and projects.
+					</p>
+					
+					<p>
+						I do a lot of programming and game development; most of it
+						happens in GameMaker, C++ and C#.
+					</p>
+					
+					<p>
+						I also draw excessively on Drawpile and do 3D modelling on
+						Blender.
+					</p>
+					
+					<p>
+						Use the navigation on the left for more info!
+					</p>
 
-			<h1><span>welcome</span></h1>
+					<h1><span>contact</span></h1>
 
-			<main>
-				<p>
-					Thanks for stopping by. This site works as a portal to all
-					of my social media profiles and projects.
-				</p>
-
-				<p>
-					I do a lot of programming and game development; most of it
-					happens in GameMaker, C++ and C#.
-				</p>
-				
-				<p>
-					I also draw excessively on Drawpile and do 3D modelling on
-					Blender.
-				</p>
-
-				<p>
-					Use the navigation on the left for more info!<br><br>
-				</p>
-			</main>
-
-			<h1><span>contact</span></h1>
-
-			<div class = "links">
-				<p id = "links-description" class = "indicator">Hover over an icon</p>
-				<a id = "links-email" href = "mailto:me@cantsleep.cc"><i class = "fa-solid fa-envelope"></i></a>
-				<a id = "links-github" href = "https://github.com/LocalInsomniac"><i class = "fa-brands fa-github"></i></a>
-				<a id = "links-discord" href = "https://discord.com/users/871682109050322984"><i class = "fa-brands fa-discord"></i></a>
-				<a id = "links-twitter" href = "https://twitter.com/_LocalInsomniac"><i class="fa-brands fa-twitter"></i></a>
-				<a id = "links-bluesky" href = "https://bsky.app/profile/cantsleep.cc"><i class="fa-brands fa-bluesky"></i></a>
-				<a id = "links-newgrounds" href = "https://localinsomniac.newgrounds.com"><img src = "/assets/newgrounds.png" /></a>
-			</div>
-
-			<footer>
-				<div class = "separator"></div>
-
-				<div id = "status">
-					<img id = "statuscafe-character" title = "Photographs by Soh and pieorpi.&#013;Also check out nonk.dev!" />
-
-					<div id = "statuscafe">
-						<div id = "statuscafe-username"></div>
-						<div id = "statuscafe-content"></div>
+					<div class = "links">
+						<p id = "links-description">Hover over an icon</p>
+						<a id = "links-email" href = "mailto:me@cantsleep.cc"><i class = "fa-solid fa-envelope"></i></a>
+						<a id = "links-github" href = "https://github.com/LocalInsomniac"><i class = "fa-brands fa-github"></i></a>
+						<a id = "links-discord" href = "https://discord.com/users/871682109050322984"><i class = "fa-brands fa-discord"></i></a>
+						<a id = "links-twitter" href = "https://twitter.com/_LocalInsomniac"><i class="fa-brands fa-twitter"></i></a>
+						<a id = "links-bluesky" href = "https://bsky.app/profile/cantsleep.cc"><i class="fa-brands fa-bluesky"></i></a>
+						<a id = "links-newgrounds" href = "https://localinsomniac.newgrounds.com"><img src = "/assets/newgrounds.png" /></a>
 					</div>
-				</div>
+					
+					<div class = "hr"></div>
 
-				<div class = "tiny">
-					<div>All content © respective owners.</div>
-					<div><span id = "lastUpdated"></span></div>
-				</div>
-			</footer>
-		</div>
+					<div id = "status">
+						<img id = "status-head" title = "Photographs by Soh and pieorpi.&#013;Also check out nonk.dev!" />
+	
+						<div id = "statuscafe">
+							<div id = "statuscafe-username"></div>
+							<div id = "statuscafe-content"></div>
+						</div>
+					</div>
+
+					<div class = "footer">All content © respective owners. <span id = "lastUpdated"></span></sub></div>
+				</section>
+			</div>
+		</main>
 	</body>
 </html>

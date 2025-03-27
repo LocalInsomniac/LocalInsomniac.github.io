@@ -13,9 +13,11 @@
 }
 
 .project-cover {
+	max-width: 50%;
 	width: 200px;
-	height: 200px;
-    height: auto;
+	height: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .project-text {

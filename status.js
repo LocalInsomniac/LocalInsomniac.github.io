@@ -1,5 +1,3 @@
-document.writeln('<div id = "statuscafe"><div id = "statuscafe-username"></div><div id = "statuscafe-content"></div></div>');
-
 fetch("https://status.cafe/users/cantsleep/status.json").then( r => r.json() ).then( r => {
     if (!r.content.length) {
         return;
@@ -55,6 +53,6 @@ fetch("https://status.cafe/users/cantsleep/status.json").then( r => r.json() ).t
         case "🏂": head = "burge"; break;
     }
 
-    document.getElementById("statuscafe-character").src = "/assets/heads/" + head + ".png";
+    document.getElementById("status-head").src = "/assets/heads/" + head + ".png";
     document.getElementById("status").style.display = "flex";
 });
