@@ -84,11 +84,6 @@ section {
 	height: 75%;
 }
 
-img[modal] {
-	margin: 4px;
-	cursor: zoom-in;
-}
-
 .gallery {
 	display: flex;
 	gap: 16px;
