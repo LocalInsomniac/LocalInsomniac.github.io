@@ -15,11 +15,11 @@ body {
 	font-family: Consolas, monospace;
 	font-size: 15px;
 	line-height: 1.25;
-    max-width: 768px;
+	max-width: 768px;
 	height: 600px;
 	margin: 32px auto;
 	color: white;
-    background: url("/assets/background.png") no-repeat center center fixed;
+	background: url("/assets/background.png") no-repeat center center fixed;
 	background-size: cover;
 	background-color: #232629;
 	overflow-y: hidden;
@@ -163,6 +163,10 @@ h2 {
 .footer {
 	font-size: 80%;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
 }
 
 #status {
@@ -214,24 +218,22 @@ h2 {
 
 #statuscafe-username {
 	font-size: 80%;
-    margin-bottom: .25em;
+	margin-bottom: .25em;
 }
 
 #hunk {
 	width: 48px;
-	vertical-align: middle;
-	margin: 0 8px;
 }
 
 #hunk:hover {
-  animation: shake 0.25s;
-  animation-iteration-count: infinite;
+	animation: shake 0.25s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% { transform: rotate(-5deg); }
-  50% { transform: rotate(5deg); }
-  100% { transform: rotate(-5deg); }
+	0% { transform: rotate(-5deg); }
+	50% { transform: rotate(5deg); }
+	100% { transform: rotate(-5deg); }
 }
 
 #modal-popup {
