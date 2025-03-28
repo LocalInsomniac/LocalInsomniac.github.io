@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			let text = dataset.modalText;
 
+			if (!text) {
+				text = modal.alt;
+			}
+
 			if (text) {
 				let para = document.createElement("p");
 
