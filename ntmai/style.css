@@ -1,107 +1,107 @@
-@import url('/style.css');
+@import url("/style.css");
 
 body {
-	background-image: unset;
-	background-color: #450C04;
-	display: block;
-	height: max-content;
-	overflow: auto;
-	margin: 0 auto;
+    background-image: unset;
+    background-color: #450c04;
+    display: block;
+    height: max-content;
+    overflow: auto;
+    margin: 0 auto;
 }
 
 h2 {
-	color: #D7BB43;
-	text-align: left;
-	margin-bottom: 16px;
+    color: #d7bb43;
+    text-align: left;
+    margin-bottom: 16px;
 }
 
 .cover {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	height: auto;
-	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    text-align: center;
 }
 
 .contents {
-	padding: 32px;
-	background-color: black;
-	overflow-x: hidden;
+    padding: 32px;
+    background-color: black;
+    overflow-x: hidden;
 }
 
 header {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	text-align: center;
-	margin-bottom: -16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: -16px;
 }
 
 main {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 section {
-	max-width: 50%;
-	overflow: hidden;
+    max-width: 50%;
+    overflow: hidden;
 }
 
 .vr {
-	width: 1px;
-	height: auto;
-	border-left: 1px solid gray;
-	margin: 0 16px;
+    width: 1px;
+    height: auto;
+    border-left: 1px solid gray;
+    margin: 0 16px;
 }
 
 .footer {
-	margin-top: 24px;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer-page {
-	width: 60%;
-	text-align: left;
-	padding-left: 5%;
+    width: 60%;
+    text-align: left;
+    padding-left: 5%;
 }
 
 .footer-page2 {
-	width: 50%;
-	text-align: right;
-	padding-right: 5%;
+    width: 50%;
+    text-align: right;
+    padding-right: 5%;
 }
 
 .footer-logo {
-	width: 75%;
-	height: 75%;
+    width: 75%;
+    height: 75%;
 }
 
 .gallery {
-	display: flex;
-	gap: 16px;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	width: 100%;
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
 }
 
 .gallery img {
-	max-height: 140px;
+    max-height: 140px;
 }
 
 .subtitle {
-	color: #D7BB43;
-	font-size: 12px;
-	padding-top: 8px;
+    color: #d7bb43;
+    font-size: 12px;
+    padding-top: 8px;
 }
 
 .tiny-legacy {
-	font-size: 80%;
+    font-size: 80%;
 }
