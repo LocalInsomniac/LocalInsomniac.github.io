@@ -1,0 +1,60 @@
+{% extends "_base.html" %}
+
+{% block title %}home{% endblock title %}
+{% block description %}Who is this?{% endblock description %}
+
+{% block head %}
+    <script type="text/javascript" src="/home.js" defer></script>
+    <script type="text/javascript" src="/status.js" defer></script>
+{% endblock head %}
+
+{% block content %}
+    <img src="/assets/logo.png" id="logo" alt="Logo" />
+
+    <h1><span>welcome</span></h1>
+
+    <p>
+        Thanks for stopping by. This site works as a portal to
+        all of my social media profiles and projects.
+    </p>
+
+    <p>
+        I do a lot of programming and game development; most of
+        it happens in GameMaker, C++ and C#.
+    </p>
+
+    <p>
+        I also draw excessively on Drawpile and dabble in 3D
+        modelling on Blender.
+    </p>
+
+    <p>Use the sidebar on the left for more info!</p>
+
+    <h1><span>contact</span></h1>
+
+    <div class="links">
+        <p id="links-description">Hover over an icon</p>
+        <a id="links-email" href="mailto:me@cantsleep.cc"><i class="fa-solid fa-envelope"></i></a>
+        <a id="links-github" href="https://github.com/LocalInsomniac"><i class="fa-brands fa-github"></i></a>
+        <a id="links-discord" href="https://discord.com/users/871682109050322984" ><i class="fa-brands fa-discord"></i></a>
+        <a id="links-twitter" href="https://twitter.com/_LocalInsomniac"><i class="fa-brands fa-twitter"></i></a>
+        <a id="links-bluesky" href="https://bsky.app/profile/cantsleep.cc" ><i class="fa-brands fa-bluesky"></i></a>
+        <a id="links-newgrounds" href="https://localinsomniac.newgrounds.com"><img src="/assets/newgrounds.png" /></a>
+    </div>
+{% endblock content %}
+
+{% block footer %}
+    <div id="status">
+        <img id="status-head" title="Photographs by Soh and pieorpi.&#013;Also check out nonk.dev!" alt="Character" />
+
+        <div id="statuscafe">
+            <div id="statuscafe-username"></div>
+            <div id="statuscafe-content"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>All content &copy; respective owners.</div>
+        <div id="lastUpdated"></div>
+    </div>
+{% endblock footer %}

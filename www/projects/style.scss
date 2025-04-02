@@ -1,0 +1,29 @@
+.project {
+    background-color: #111214;
+    margin: 16px 0;
+    display: flex;
+    overflow: hidden;
+
+    &-cover {
+        max-width: 50%;
+        width: 200px;
+        height: auto;
+        margin: auto 0;
+    }
+
+    &-text {
+        padding: 8px;
+
+        img {
+            vertical-align: middle;
+            padding-right: 4px;
+        }
+    }
+
+    &-hr {
+        height: 1px;
+        background-color: gray;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
