@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with: { ref: main }
+        with: { ref: deploy }
       - name: Build
         run: |
           wget -O sanity https://github.com/nonk123/sanity/releases/download/gh-actions/sanity-release-linux
