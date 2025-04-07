@@ -12,30 +12,35 @@ img {
 }
 
 body {
+    width: 768px;
+    height: 600px;
+    margin: 32px auto;
+
     font-family: Consolas, monospace;
     font-size: 15px;
     line-height: 1.25;
-    max-width: 768px;
-    height: 600px;
-    margin: 32px auto;
     color: white;
+
     background: url("/assets/background.png") no-repeat center center fixed;
     background-size: cover;
     background-color: #232629;
-    overflow-y: hidden;
 }
 
 .gang {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
+
     width: auto;
     height: 100%;
+
     overflow: hidden;
+    user-select: none;
+
     opacity: 0.25;
     mix-blend-mode: overlay;
+
     z-index: -10;
-    user-select: none;
 }
 
 .cols {
@@ -46,9 +51,6 @@ body {
 #menu {
     width: max-content;
     flex-shrink: 0;
-    overflow: auto;
-    max-height: calc(100vh - 64px);
-    min-height: calc(64px);
 
     section {
         margin-bottom: 16px;
@@ -62,10 +64,12 @@ body {
 
 .menu {
     &-category {
-        background: linear-gradient(to right, transparent, #232629);
         padding-left: 4px;
         margin-bottom: 1px;
+
         font-size: 64%;
+        background: linear-gradient(to right, transparent, #232629);
+
         user-select: none;
 
         span {
@@ -79,15 +83,17 @@ body {
     }
 
     &-button {
-        background-color: #232629;
         padding: 8px;
         margin-bottom: 1px;
+
         white-space: nowrap;
         user-select: none;
 
+        background-color: #232629;
+
         img {
-            vertical-align: middle;
             padding-right: 8px;
+            vertical-align: middle;
         }
 
         &:hover {
@@ -102,28 +108,30 @@ body {
 }
 
 #contents {
-    background-color: #232629;
-    padding: 32px;
-    overflow: auto;
     width: 100%;
-    max-height: calc(100vh - 128px);
+    padding: 32px;
+
+    background-color: #232629;
+    overflow: auto;
 }
 
 h1 {
     margin: 32px 0;
 
     span {
-        background-color: white;
+        display: inline-block;
         color: #232629;
+        background-color: white;
+
         padding: 0 10px 0 8px;
         border-radius: 16px 16px 0 0;
-        display: inline-block;
     }
 
     &:after {
+        height: 1px;
+
         display: block;
         content: "";
-        height: 1px;
         background: linear-gradient(to right, white, gray);
     }
 }
@@ -131,6 +139,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 200%;
+
     margin: 0 auto 32px auto;
 }
 
@@ -138,6 +147,7 @@ h2 {
     width: 100%;
     height: 1px;
     margin: 32px 0;
+
     background-color: gray;
 }
 
@@ -145,6 +155,7 @@ h2 {
     text-align: center;
     font-size: 40px;
     vertical-align: middle;
+
     user-select: none;
 
     img {
@@ -165,6 +176,7 @@ h2 {
 .footer {
     font-size: 80%;
     text-align: center;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,9 +184,10 @@ h2 {
 }
 
 #status {
-    display: none;
     height: fit-content;
     margin: 16px auto 32px auto;
+
+    display: none;
     align-items: center;
     justify-content: center;
 
@@ -185,9 +198,11 @@ h2 {
     &cafe {
         width: fit-content;
         max-width: 240px;
+        padding: 8px 16px;
+
         color: #232629;
         background: white;
-        padding: 8px 16px;
+
         border-radius: 32px;
         overflow: hidden;
         text-align: center;
@@ -245,16 +260,19 @@ h2 {
 }
 
 #modal-popup {
-    visibility: hidden;
     width: 100%;
     height: 100%;
+
+    position: fixed;
     left: 0;
     top: 0;
-    position: fixed;
     z-index: 1000;
+
+    visibility: hidden;
     background: transparent;
     transition: 0.2s;
     opacity: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;

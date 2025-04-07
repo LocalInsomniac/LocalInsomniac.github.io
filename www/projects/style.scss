@@ -1,13 +1,16 @@
 .project {
-    background-color: #111214;
     margin: 16px 0;
+
     display: flex;
     overflow: hidden;
+
+    background-color: #111214;
 
     &-cover {
         max-width: 50%;
         width: 200px;
         height: auto;
+
         margin: auto 0;
     }
 
@@ -22,8 +25,8 @@
 
     &-hr {
         height: 1px;
+        margin: 8px 0;
+
         background-color: gray;
-        margin-top: 8px;
-        margin-bottom: 8px;
     }
 }
