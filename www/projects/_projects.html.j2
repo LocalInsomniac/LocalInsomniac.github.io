@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+
+{% block title %}projects{% endblock title %}
+{% block description %}What are these?{% endblock description %}
+{% block url %}/projects{% endblock url %}
+
+{% block head %}<link rel="stylesheet" href="/projects/style.css" />{% endblock head %}
+
+{% block content %}
+    <h2>projects</h2>
+
+    <p>
+        These are every publicly available project that I have been a part of.
+    </p>
+
+    <p>I work on these in my own time, which is often sparse these days.</p>
+
+    {% for category in categories %}
+        <h1><span>{{ category.category }}</span></h1>
+
+        {% for project in category.projects %}
+            <div class="project"><!--
+                --><img src="/projects/assets/{{ project.id }}.png" class="project-cover" alt="{{ project.name }}" /><!--
+
+                --><div class="project-text"><!--
+                    -->{% if project.tags is iterable and project.tags is not string and project.tags is not mapping %}<!--
+                        -->{% for tag in project.tags %}<!--
+                        -->{% set tag = tags[tag] %}<!--
+                            --><img src="{{ tag.icon }}" alt="{{ tag.name }}" title="{{ tag.name }}" /><!--
+                        -->{% endfor %}<!--
+                    -->{% endif %}<!--
+
+                    -->{% if project.url %}<a href="{{ project.url }}"><b>{{ project.name }}</b></a>{% else %}<b>{{ project.name }}</b>{% endif %}<!--
+                    -->{% if project.alt %} <sub>{{ project.alt }}</sub>{% endif %}<!--
+
+                    --><div class="project-hr"></div><!--
+                    -->{{ project.description|safe }}<!--
+                --></div><!--
+            --></div>
+        {% endfor %}
+    {% endfor %}
+{% endblock content %}
