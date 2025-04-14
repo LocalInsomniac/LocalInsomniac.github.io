@@ -1,14 +1,11 @@
 @import url("/style.css");
 
 body {
-    height: max-content;
-    margin: 0 auto;
+    width: 800px;
+    padding: 0;
 
     background-image: unset;
     background-color: #450c04;
-
-    display: block;
-    overflow: auto;
 }
 
 h2 {
@@ -55,7 +52,7 @@ main {
 }
 
 section {
-    max-width: 50%;
+    width: 50%;
     overflow: hidden;
 }
 
@@ -105,7 +102,7 @@ section {
     overflow-y: hidden;
 
     img {
-        max-height: 140px;
+        height: 146px;
     }
 }
 

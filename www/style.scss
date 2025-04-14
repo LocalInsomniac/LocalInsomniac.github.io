@@ -12,9 +12,10 @@ img {
 }
 
 body {
-    width: 768px;
-    height: 600px;
-    margin: 32px auto;
+    width: 736px;
+    height: max-content;
+    padding: 32px;
+    margin: 0 auto;
 
     font-family: Consolas, monospace;
     font-size: 15px;
