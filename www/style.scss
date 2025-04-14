@@ -1,6 +1,39 @@
 @font-face {
     font-family: Consolas;
-    src: url("/assets/Consolas.ttf");
+    src: url("/assets/consola.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url("/assets/consolab.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url("/assets/consolai.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url("/assets/consolaz.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 a {
@@ -12,7 +45,7 @@ img {
 }
 
 body {
-    width: 736px;
+    width: 800px;
     height: max-content;
     padding: 32px;
     margin: 0 auto;
