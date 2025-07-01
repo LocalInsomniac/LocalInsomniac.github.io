@@ -5,11 +5,11 @@ render("projects/_projects.html", "projects/index.html", {
 
             projects = {
                 {
-                    id = "dnb",
-                    name = "DNB",
+                    id = "dcb",
+                    name = "Dude Called Barry",
                     alt = "Mightcer, 2025",
-                    url = "https://mightcer.itch.io/dnb",
-                    description = "A casual game with short levels and a high skill ceiling. Dash and concuss your way to the end of each level as fast as you can.<br /><br />I designed Gilbert and the sound effects.",
+                    url = "https://store.steampowered.com/app/3719890",
+                    description = "A casual game with tons of short levels and a high skill ceiling. Dash and concuss your way to the end of each level as fast as you can.<br /><br />I designed Barry and the sound effects.",
                     tags = {"wip", "game"},
                 },
             },
