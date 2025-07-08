@@ -7,11 +7,24 @@
     background-color: #111214;
 
     &-cover {
-        max-width: 50%;
-        width: 200px;
-        height: auto;
+        min-width: 200px;
+        min-height: 200px;
 
         margin: auto 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+
+            display: block;
+            object-fit: contain;
+            object-position: center;
+        }
     }
 
     &-text {
@@ -22,9 +35,28 @@
             padding-right: 4px;
         }
 
+        i {
+            font-size: 75%;
+            vertical-align: middle;
+            margin-left: 0.5em;
+
+            opacity: 60%;
+        }
+
         sub {
             vertical-align: middle;
             margin-left: 0.75em;
+        }
+
+        ul {
+            padding: 0 1em;
+            margin: 0;
+
+            opacity: 70%;
+
+            a {
+                color: #82aac5;
+            }
         }
     }
 

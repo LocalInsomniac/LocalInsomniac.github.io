@@ -20,7 +20,7 @@
 
         {% for project in category.projects %}
             <div class="project"><!--
-                --><img src="/projects/assets/{{ project.id }}.png" class="project-cover" alt="{{ project.name }}" /><!--
+                --><div class="project-cover"><img src="/projects/assets/{{ project.id }}.png" alt="{{ project.name }}" /></div><!--
 
                 --><div class="project-text"><!--
                     -->{% if project.tags is iterable and project.tags is not string and project.tags is not mapping %}<!--
@@ -30,11 +30,19 @@
                         -->{% endfor %}<!--
                     -->{% endif %}<!--
 
-                    -->{% if project.url %}<a href="{{ project.url }}"><b>{{ project.name }}</b></a>{% else %}<b>{{ project.name }}</b>{% endif %}<!--
+                    -->{% if project.url %}<a href="{{ project.url }}"><b>{{ project.name }}</b></a>{% if project.url[0] != '/' %}<i class="fa fa-external-link"></i>{% endif %}{% else %}<b>{{ project.name }}</b>{% endif %}<!--
                     -->{% if project.alt %}<sub>{{ project.alt }}</sub>{% endif %}<!--
 
                     --><div class="project-hr"></div><!--
                     -->{{ project.description|safe }}<!--
+                    -->{% if project.footer is iterable and project.footer is not string and project.footer is not mapping %}<!--
+                        --><br /><br /><!--
+                        --><ul><!--
+                            -->{% for text in project.footer %}<!--
+                            --><li>{{ text|safe }}</li><!--
+                            -->{% endfor %}<!--
+                        --></ul><!--
+                    -->{% endif %}<!--
                 --></div><!--
             --></div>
         {% endfor %}
