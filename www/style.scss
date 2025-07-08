@@ -254,6 +254,8 @@ h2 {
 
     &-head {
         z-index: 1;
+
+        cursor: help;
     }
 
     img[src="/assets/heads/hunk.png"] {
@@ -279,6 +281,8 @@ h2 {
 
 #hunk {
     width: 48px;
+
+    cursor: help;
 
     &:hover {
         animation: shake 0.25s;
