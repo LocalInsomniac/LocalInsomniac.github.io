@@ -26,8 +26,7 @@
     font-style: italic;
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -44,20 +43,41 @@ img {
     max-width: 100%;
 }
 
-body {
-    width: 800px;
-    height: max-content;
-    padding: 32px;
-    margin: 0 auto;
+html {
+    background: url("/assets/background.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #232629;
+}
 
+body {
     font-family: Consolas, monospace;
     font-size: 15px;
     line-height: 1.25;
     color: white;
 
-    background: url("/assets/background.png") no-repeat center center fixed;
-    background-size: cover;
-    background-color: #232629;
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 100vh;
+    overflow: auto;
+    padding: 32px;
+    margin: auto;
+}
+
+#grail {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    overflow-x: visible;
+    margin: auto;
+}
+
+#grail, #contents {
+    width: 600px;
+    height: max-content;
+}
+#menu, #contents {
+    flex-shrink: 0;
 }
 
 .gang {
@@ -78,14 +98,8 @@ body {
     z-index: -10;
 }
 
-.cols {
-    display: flex;
-    justify-content: center;
-}
-
 #menu {
     width: max-content;
-    flex-shrink: 0;
 
     section {
         margin-bottom: 16px;
@@ -143,11 +157,9 @@ body {
 }
 
 #contents {
-    width: 100%;
     padding: 32px;
-
     background-color: #232629;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 h1 {

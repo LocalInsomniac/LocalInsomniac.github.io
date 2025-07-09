@@ -44,53 +44,51 @@
     </head>
 
     <body>
-        <main>
-            <img class="gang" src="/assets/gang_hunk.png" />
+        <img class="gang" src="/assets/gang_hunk.png" />
 
-            <div class="cols">
-                <section id="menu">
-                    <section>
-                        {% if self.title() == "home" %}
-                            <div class="menu-button menu-button-current"><img src="/assets/icons/home.png" />home</div>
-                        {% else %}
-                            <a href="/"><div class="menu-button"><img src="/assets/icons/home.png" />home</div></a>
-                        {% endif %}
+        <div id="grail">
+            <section id="menu">
+                <section>
+                    {% if self.title() == "home" %}
+                        <div class="menu-button menu-button-current"><img src="/assets/icons/home.png" />home</div>
+                    {% else %}
+                        <a href="/"><div class="menu-button"><img src="/assets/icons/home.png" />home</div></a>
+                    {% endif %}
 
-                        {% if self.title() == "projects" %}
-                            <div class="menu-button menu-button-current"><img src="/assets/icons/projects.png" />projects</div>
-                        {% else %}
-                            <a href="/projects"><div class="menu-button"><img src="/assets/icons/projects.png" />projects</div></a>
-                        {% endif %}
+                    {% if self.title() == "projects" %}
+                        <div class="menu-button menu-button-current"><img src="/assets/icons/projects.png" />projects</div>
+                    {% else %}
+                        <a href="/projects"><div class="menu-button"><img src="/assets/icons/projects.png" />projects</div></a>
+                    {% endif %}
 
-                        <a href="https://files.cantsleep.cc"><div class="menu-button"><img src="/assets/icons/file.png" />files</div></a>
-                    </section>
-
-                    <section>
-                        <div class="menu-category"><span>friends<i class="fa fa-external-link"></i></span></div>
-                        <a href="https://nonk.dev"><div class="menu-button"><img src="/assets/icons/nonk.png" />nonk</div></a>
-                        <a href="https://vilebeggar.github.io"><div class="menu-button"><img src="/assets/icons/vilebeggar.png" />v.beggar</div></a>
-                    </section>
-
-                    <section>
-                        <div class="menu-category"><span>collectives<i class="fa fa-external-link"></i></span></div>
-                        <a href="https://schwung.us"><div class="menu-button"><img src="/assets/icons/schwungus.png"/>schwungus</div></a>
-                    </section>
+                    <a href="https://files.cantsleep.cc"><div class="menu-button"><img src="/assets/icons/file.png" />files</div></a>
                 </section>
 
-                <section id="contents">
-                    {% block content %}{% endblock content %}
-
-                    <div class="hr"></div>
-
-                    {% block footer %}
-                        <div class="footer">
-                            <div>All content &copy; respective owners.</div>
-                            <div><img src="/assets/hunkathon.png" id="hunk" title="Photographs by Soh and pieorpi" /></div>
-                            <div id="lastUpdated"></div>
-                        </div>
-                    {% endblock footer %}
+                <section>
+                    <div class="menu-category"><span>friends<i class="fa fa-external-link"></i></span></div>
+                    <a href="https://nonk.dev"><div class="menu-button"><img src="/assets/icons/nonk.png" />nonk</div></a>
+                    <a href="https://vilebeggar.github.io"><div class="menu-button"><img src="/assets/icons/vilebeggar.png" />v.beggar</div></a>
                 </section>
-            </div>
-        </main>
+
+                <section>
+                    <div class="menu-category"><span>collectives<i class="fa fa-external-link"></i></span></div>
+                    <a href="https://schwung.us"><div class="menu-button"><img src="/assets/icons/schwungus.png"/>schwungus</div></a>
+                </section>
+            </section>
+
+            <section id="contents">
+                {% block content %}{% endblock content %}
+
+                <div class="hr"></div>
+
+                {% block footer %}
+                    <div class="footer">
+                        <div>All content &copy; respective owners.</div>
+                        <div><img src="/assets/hunkathon.png" id="hunk" title="Photographs by Soh and pieorpi" /></div>
+                        <div id="lastUpdated"></div>
+                    </div>
+                {% endblock footer %}
+            </section>
+        </div>
     </body>
 </html>
