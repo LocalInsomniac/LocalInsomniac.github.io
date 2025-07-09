@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const set = (text) => {
-        return () => {
+    const set = (id, text) => {
+        const elt = document.getElementById(id);
+        if (!elt) {
+            console.warn("tell this stupid coder he forgot 'id=" + id + "'");
+            return;
+        }
+
+        elt.onmouseover = () => {
             const linksDescription =
                 document.getElementById("links-description");
 
@@ -9,22 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     };
 
-    document.getElementById("links-email").onmouseover = set(
-        "Email (me@cantsleep.cc)"
-    );
-    document.getElementById("links-github").onmouseover = set(
-        "GitHub (LocalInsomniac)"
-    );
-    document.getElementById("links-discord").onmouseover = set(
-        "Discord (cant_sleep)"
-    );
-    document.getElementById("links-twitter").onmouseover = set(
-        "Twitter (@_LocalInsomniac)"
-    );
-    document.getElementById("links-bluesky").onmouseover = set(
-        "Bluesky (@cantsleep.cc)"
-    );
-    document.getElementById("links-newgrounds").onmouseover = set(
-        "Newgrounds (@LocalInsomniac)"
-    );
+    set("links-email", "Email (me@cantsleep.cc)");
+    set("links-github", "GitHub (LocalInsomniac)");
+    set("links-discord", "Discord (cant_sleep)");
+    set("links-twitter",  "Twitter (@_LocalInsomniac)");
+    set("links-bluesky", "Bluesky (@cantsleep.cc)");
+    set("links-newgrounds",  "Newgrounds (@LocalInsomniac)");
 });
