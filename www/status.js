@@ -15,136 +15,59 @@ fetch("https://status.cafe/users/cantsleep/status.json")
         document.getElementById("statuscafe-content").innerHTML = r.content;
 
         var head;
-
         switch (r.face) {
             default:
                 head = "hunk";
                 break;
             case "💔":
+            case "😯":
+            case "🤒":
+            case "😡":
+            case "❄️":
+            case "🌧️":
+            case "🐶":
+            case "🌮":
+            case "🍶":
+            case "🍷":
+            case "🥃":
+            case "🍺":
+            case "🎤":
+            case "💥":
                 head = "junktroop";
                 break;
             case "🧐":
-                head = "burge";
-                break;
-            case "😯":
-                head = "junktroop";
-                break;
-            case "🤒":
-                head = "junktroop";
-                break;
-            case "😡":
-                head = "junktroop";
-                break;
             case "🥳":
+            case "🤩":
+            case "🍔":
+            case "🥗":
+            case "🍸":
+            case "🍾":
+            case "🫖":
+            case "☕️":
+            case "📰":
+            case "⛵":
+            case "🌱":
+            case "🏆":
+            case "⛳️":
+            case "🏂":
+            case "🍄":
                 head = "burge";
                 break;
             case "🤖":
-                head = "video";
-                break;
-            case "🤩":
-                head = "burge";
-                break;
-            case "❄️":
-                head = "junktroop";
-                break;
-            case "🌧️":
-                head = "junktroop";
-                break;
             case "✨":
-                head = "video";
-                break;
-            case "🐶":
-                head = "junktroop";
-                break;
             case "🐱":
-                head = "video";
-                break;
             case "🍱":
-                head = "video";
-                break;
-            case "🍔":
-                head = "burge";
-                break;
-            case "🥗":
-                head = "burge";
-                break;
             case "🍙":
-                head = "video";
-                break;
             case "🍣":
-                head = "video";
-                break;
-            case "🌮":
-                head = "junktroop";
-                break;
-            case "🍶":
-                head = "junktroop";
-                break;
-            case "🍷":
-                head = "junktroop";
-                break;
-            case "🥃":
-                head = "junktroop";
-                break;
-            case "🍸":
-                head = "burge";
-                break;
-            case "🍾":
-                head = "burge";
-                break;
-            case "🍺":
-                head = "junktroop";
-                break;
-            case "🫖":
-                head = "burge";
-                break;
-            case "☕️":
-                head = "burge";
-                break;
-            case "📰":
-                head = "burge";
-                break;
-            case "⛵":
-                head = "burge";
-                break;
             case "💻":
-                head = "video";
-                break;
             case "✈️":
-                head = "video";
-                break;
             case "🚄":
-                head = "video";
-                break;
-            case "🌱":
-                head = "burge";
-                break;
             case "💾":
-                head = "video";
-                break;
             case "📱":
-                head = "video";
-                break;
-            case "🎤":
-                head = "junktroop";
-                break;
             case "📺":
-                head = "video";
-                break;
             case "🎶":
+            case "💿":
                 head = "video";
-                break;
-            case "🏆":
-                head = "burge";
-                break;
-            case "⛳️":
-                head = "burge";
-                break;
-            case "🏂":
-                head = "burge";
-                break;
-            case "💥":
-                head = "junktroop";
                 break;
         }
 
