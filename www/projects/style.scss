@@ -30,20 +30,6 @@
     &-text {
         padding: 0.5em;
 
-        img {
-            vertical-align: middle;
-            padding-right: 0.25em;
-        }
-
-        i {
-            font-size: 75%;
-            vertical-align: middle;
-            margin-left: 0.5em;
-            margin-right: -0.25em;
-
-            opacity: 60%;
-        }
-
         sub {
             vertical-align: middle;
             margin-left: 0.75em;
@@ -59,6 +45,19 @@
                 color: #82aac5;
             }
         }
+    }
+
+    &-icon {
+        vertical-align: middle;
+        padding-right: 0.25em;
+    }
+
+    &-external {
+        vertical-align: middle;
+        margin-left: 0.4em;
+        margin-right: -0.25em;
+
+        opacity: 50%;
     }
 
     &-hr {

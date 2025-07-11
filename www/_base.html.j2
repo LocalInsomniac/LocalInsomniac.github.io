@@ -31,7 +31,7 @@
         <link rel="preload" href="/assets/icons/home.png" as="image" />
         <link rel="preload" href="/assets/icons/projects.png" as="image" />
         <link rel="preload" href="/assets/icons/file.png" as="image" />
-        <link rel="preload" href="/assets/icons/book.png" as="image" />
+        <link rel="preload" href="/assets/icons/external_small.png" as="image" />
         <link rel="preload" href="/assets/icons/nonk.png" as="image" />
         <link rel="preload" href="/assets/icons/vilebeggar.png" as="image" />
         <link rel="preload" href="/assets/icons/schwungus.png" as="image" />
@@ -39,41 +39,40 @@
         {% block head %}{% endblock head %}
 
         <script defer src="https://umami.schwung.us/script.js" data-website-id="40a0ba16-61a8-407b-a876-1b42949e761c"></script>
-        <script type="text/javascript" src="/info.js"></script>
-        <script src="https://kit.fontawesome.com/069decd2d9.js" crossorigin="anonymous" ></script>
+        <script defer src="/info.js"></script>
     </head>
 
     <body>
         <main>
-            <img class="gang" src="/assets/gang_hunk.png" />
+            <img class="gang" src="/assets/gang_hunk.png" alt="Hunk" />
 
             <div class="cols">
                 <section id="menu">
                     <section>
                         {% if self.title() == "home" %}
-                            <div class="menu-button menu-button-current"><img src="/assets/icons/home.png" />home</div>
+                            <div class="menu-button menu-button-current"><img src="/assets/icons/home.png" alt="Home" />home</div>
                         {% else %}
-                            <a href="/"><div class="menu-button"><img src="/assets/icons/home.png" />home</div></a>
+                            <a href="/"><div class="menu-button"><img src="/assets/icons/home.png" alt="Home" />home</div></a>
                         {% endif %}
 
                         {% if self.title() == "projects" %}
-                            <div class="menu-button menu-button-current"><img src="/assets/icons/projects.png" />projects</div>
+                            <div class="menu-button menu-button-current"><img src="/assets/icons/projects.png" alt="Projects" />projects</div>
                         {% else %}
-                            <a href="/projects"><div class="menu-button"><img src="/assets/icons/projects.png" />projects</div></a>
+                            <a href="/projects"><div class="menu-button"><img src="/assets/icons/projects.png" alt="Projects" />projects</div></a>
                         {% endif %}
 
-                        <a href="https://files.cantsleep.cc"><div class="menu-button"><img src="/assets/icons/file.png" />files</div></a>
+                        <a href="https://files.cantsleep.cc"><div class="menu-button"><img src="/assets/icons/file.png" alt="Files" />files</div></a>
                     </section>
 
                     <section>
-                        <div class="menu-category"><span>friends<i class="fa fa-external-link"></i></span></div>
-                        <a href="https://nonk.dev"><div class="menu-button"><img src="/assets/icons/nonk.png" />nonk</div></a>
-                        <a href="https://vilebeggar.github.io"><div class="menu-button"><img src="/assets/icons/vilebeggar.png" />v.beggar</div></a>
+                        <div class="menu-category"><span>friends<img src="/assets/icons/external_small.png" alt="External Links" /></span></div>
+                        <a href="https://nonk.dev"><div class="menu-button"><img src="/assets/icons/nonk.png" alt="nonk" />nonk</div></a>
+                        <a href="https://vilebeggar.github.io"><div class="menu-button"><img src="/assets/icons/vilebeggar.png" alt="Vile Beggar" />v.beggar</div></a>
                     </section>
 
                     <section>
-                        <div class="menu-category"><span>collectives<i class="fa fa-external-link"></i></span></div>
-                        <a href="https://schwung.us"><div class="menu-button"><img src="/assets/icons/schwungus.png"/>schwungus</div></a>
+                        <div class="menu-category"><span>collectives<img src="/assets/icons/external_small.png" alt="External Links" /></span></div>
+                        <a href="https://schwung.us"><div class="menu-button"><img src="/assets/icons/schwungus.png" alt="Schwungus" />schwungus</div></a>
                     </section>
                 </section>
 
@@ -85,7 +84,7 @@
                     {% block footer %}
                         <div class="footer">
                             <div>All content &copy; respective owners.</div>
-                            <div><img src="/assets/hunkathon.png" id="hunk" title="Photographs by Soh and pieorpi" /></div>
+                            <div><img src="/assets/hunkathon.png" id="hunk" alt="Footer" title="Photographs by Soh and pieorpi" /></div>
                             <div id="lastUpdated"></div>
                         </div>
                     {% endblock footer %}

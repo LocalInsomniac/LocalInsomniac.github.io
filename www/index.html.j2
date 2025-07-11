@@ -5,38 +5,48 @@
 
 {% block head %}
     <link rel="preload" href="/assets/logo.png" as="image" />
+    <link rel="preload" href="/assets/icons/external.png" as="image" />
+    <link rel="preload" href="/assets/icons/links/email.png" as="image" />
+    <link rel="preload" href="/assets/icons/links/github.png" as="image" />
+    <link rel="preload" href="/assets/icons/links/discord.png" as="image" />
+    <link rel="preload" href="/assets/icons/links/twitter.png" as="image" />
 
-    <script type="text/javascript" src="/home.js" defer></script>
-    <script type="text/javascript" src="/status.js" defer></script>
+    <script defer src="/home.js"></script>
+    <script defer src="/status.js"></script>
 {% endblock head %}
 
 {% block content %}
-    <img src="/assets/logo.png" id="logo" alt="Logo" />
+    <img src="/assets/logo.png" id="logo" alt="Can't Sleep" />
 
     <h1><span>welcome</span></h1>
 
     <p>
-        Thanks for stopping by. This site works as a portal to all of my
-        profiles and projects.
+        Thanks for stopping by.<br>
+        I'm <b>Can't Sleep</b>, and I do odd jobs on my cool computer.
     </p>
-
-    <p>I program a lot, usually in <b>C</b> or <b>GML</b>.</p>
 
     <p>
-        I also draw excessively on <b>Drawpile</b> and dabble in 3D modelling
-        on <b>Blender</b>.
+        This site works as a portal for my profiles and various projects,
+        most of which were usually haphazardly scattered around.
     </p>
+
+    <p>These are my attributes:</p>
+    <ul>
+        <li>Primary programming languages are <b>C</b> and <b>GML</b>.</li>
+        <li><b>Paint.NET</b>, <b>Drawpile</b> and/or <b>Blender</b> for imagery.</li>
+        <li><b>Audacity</b> with ~55 GB of stock sounds for audio.</li>
+    </ul>
 
     <p>Use the sidebar on the left to explore!</p>
 
-    <h1><span>contact</span></h1>
+    <h1><span>contact<img src="/assets/icons/external.png" alt="External Links" /></span></h1>
 
     <div class="links">
         <p id="links-description">Hover over an icon</p>
-        <a id="links-email" href="mailto:me@cantsleep.cc"><i class="fa-solid fa-envelope"></i></a>
-        <a id="links-github" href="https://github.com/LocalInsomniac"><i class="fa-brands fa-github"></i></a>
-        <a id="links-discord" href="https://discord.com/users/871682109050322984"><i class="fa-brands fa-discord"></i></a>
-        <a id="links-twitter" href="https://twitter.com/_LocalInsomniac"><i class="fa-brands fa-twitter"></i></a>
+        <a id="links-email" href="mailto:me@cantsleep.cc"><img src="/assets/icons/links/email.png" alt="Email" /></a>
+        <a id="links-github" href="https://github.com/LocalInsomniac"><img src="/assets/icons/links/github.png" alt="GitHub" /></a>
+        <a id="links-discord" href="https://discord.com/users/871682109050322984"><img src="/assets/icons/links/discord.png" alt="Discord" /></a>
+        <a id="links-twitter" href="https://twitter.com/_LocalInsomniac"><img src="/assets/icons/links/twitter.png" alt="Twitter" /></a>
     </div>
 {% endblock content %}
 

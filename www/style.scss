@@ -47,7 +47,7 @@ img {
 body {
     width: 800px;
     height: max-content;
-    padding: 32px;
+    padding: 2em;
     margin: 0 auto;
 
     font-family: Consolas, monospace;
@@ -55,7 +55,10 @@ body {
     line-height: 1.25;
     color: white;
 
-    background: url("/assets/background.png") no-repeat center center fixed;
+    background: url("/assets/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     background-color: #232629;
 }
@@ -87,6 +90,8 @@ body {
     width: max-content;
     flex-shrink: 0;
 
+    line-height: 1;
+
     section {
         margin-bottom: 16px;
     }
@@ -111,9 +116,9 @@ body {
             opacity: 50%;
         }
 
-        i {
-            margin-left: 0.5em;
-            font-size: 80%;
+        img {
+            vertical-align: middle;
+            margin-left: 0.25em;
         }
     }
 
@@ -151,7 +156,7 @@ body {
 }
 
 h1 {
-    margin: 1.5em 0;
+    margin: 1em 0;
 
     span {
         display: inline-block;
@@ -160,6 +165,12 @@ h1 {
 
         padding: 0 0.5em;
         border-radius: 16px 16px 0 0;
+    }
+
+    img {
+        vertical-align: middle;
+        margin-left: 0.25em;
+        margin-right: -0.2em;
     }
 
     &:after {
@@ -172,10 +183,8 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     font-size: 200%;
-
-    margin: 0 auto 1em auto;
+    margin: 0;
 }
 
 .hr {
@@ -188,17 +197,12 @@ h2 {
 
 .links {
     text-align: center;
-    font-size: 250%;
     vertical-align: middle;
 
     user-select: none;
 
-    p {
-        font-size: initial;
-    }
-
     a {
-        margin: 0.25em;
+        margin: 0.5em;
     }
 }
 

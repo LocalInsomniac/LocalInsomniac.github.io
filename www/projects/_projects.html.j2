@@ -25,11 +25,11 @@
                     -->{% if project.tags is iterable and project.tags is not string and project.tags is not mapping %}<!--
                         -->{% for tag in project.tags %}<!--
                         -->{% set tag = tags[tag] %}<!--
-                            --><img src="{{ tag.icon }}" alt="{{ tag.name }}" title="{{ tag.name }}" /><!--
+                            --><img class="project-icon" src="{{ tag.icon }}" alt="{{ tag.name }}" title="{{ tag.name }}" /><!--
                         -->{% endfor %}<!--
                     -->{% endif %}<!--
 
-                    -->{% if project.url %}<a href="{{ project.url }}"><b>{{ project.name }}</b></a>{% if project.url[0] != '/' %}<i class="fa fa-external-link"></i>{% endif %}{% else %}<b>{{ project.name }}</b>{% endif %}<!--
+                    -->{% if project.url %}<a href="{{ project.url }}"><b>{{ project.name }}</b></a>{% if project.url[0] != '/' %}<img class="project-external" src="/assets/icons/external.png" alt="External Link" />{% endif %}{% else %}<b>{{ project.name }}</b>{% endif %}<!--
                     -->{% if project.alt %}<sub>{{ project.alt }}</sub>{% endif %}<!--
 
                     --><div class="project-hr"></div><!--
