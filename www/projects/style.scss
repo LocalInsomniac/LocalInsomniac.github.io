@@ -1,5 +1,7 @@
 .project {
     margin: 1em 0;
+    min-width: 100%;
+    min-height: 200px;
 
     display: flex;
     overflow: hidden;
@@ -57,7 +59,7 @@
         margin-left: 0.4em;
         margin-right: -0.25em;
 
-        opacity: 50%;
+        opacity: 60%;
     }
 
     &-hr {
@@ -65,5 +67,23 @@
         margin: 0.5em 0;
 
         background-color: gray;
+    }
+}
+
+.project-misc {
+    margin-top: 0.5em;
+
+    li {
+        margin: 0.25em -1em;
+    }
+
+    sub {
+        vertical-align: middle;
+        margin-left: 0.75em;
+    }
+
+    span {
+        margin-left: 0.75em;
+        opacity: 70%;
     }
 }

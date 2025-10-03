@@ -19,7 +19,13 @@
 
         {% for project in category.projects %}
             <div class="project"><!--
-                --><div class="project-cover"><img src="/projects/assets/{{ project.id }}.png" alt="{{ project.name }}" /></div><!--
+                --><div class="project-cover"><!--
+                    -->{% if project.image %}<!--
+                        --><img src="/projects/assets/{{ project.image }}.png" alt="{{ project.name }}" /><!--
+                    -->{% else %}<!--
+                        --><img src="/assets/broken.png" alt="{{ project.name }}" /><!--
+                    -->{% endif %}<!--
+                --></div><!--
 
                 --><div class="project-text"><!--
                     -->{% if project.tags is iterable and project.tags is not string and project.tags is not mapping %}<!--
@@ -45,5 +51,24 @@
                 --></div><!--
             --></div>
         {% endfor %}
+
+        {% if category.misc %}
+                <b>See also</b>
+                <ul class="project-misc"><!--
+                    -->{% for project in category.misc %}<!--
+                        --><li><!--
+                            -->{% if project.tags is iterable and project.tags is not string and project.tags is not mapping %}<!--
+                                -->{% for tag in project.tags %}<!--
+                                -->{% set tag = tags[tag] %}<!--
+                                    --><img class="project-icon" src="{{ tag.icon }}" alt="{{ tag.name }}" title="{{ tag.name }}" /><!--
+                                -->{% endfor %}<!--
+                            -->{% endif %}<!--
+                            --><b><a href="{{ project.url }}">{{ project.name }}</a></b>{% if project.url[0] != '/' %}<img class="project-external" src="/assets/icons/external.png" alt="External Link" />{% endif %}<!--
+                            --><sub>{{ project.alt }}</sub><!--
+                            --><span>{{ project.description }}</span><!--
+                        --></li><!--
+                    -->{% endfor %}<!--
+                --></ul>
+        {% endif %}
     {% endfor %}
 {% endblock content %}
