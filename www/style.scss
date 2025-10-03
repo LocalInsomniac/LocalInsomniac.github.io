@@ -63,24 +63,6 @@ body {
     background-color: #232629;
 }
 
-.gang {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-
-    width: auto;
-    max-width: none;
-    height: 100%;
-
-    object-fit: contain;
-    overflow: hidden;
-    user-select: none;
-
-    opacity: 0.25;
-    mix-blend-mode: overlay;
-    z-index: -10;
-}
-
 .cols {
     display: flex;
     justify-content: center;
